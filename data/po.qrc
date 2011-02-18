@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="qm">
+    <file>../build/trad_en.qm</file>
+    <file>../build/trad_fr.qm</file>
+  </qresource>
+</RCC>

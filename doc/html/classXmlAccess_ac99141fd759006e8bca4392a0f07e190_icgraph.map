@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#ac439d89ae7c5375ab5c23be14fcbd652" title="DataHandler::expChanged" alt="" coords="249,5,420,35"/>
+<area shape="rect" href="$classDataHandler.html#ad1c46b4c30a7bfbafc9766917ce4281d" title="DataHandler::getExpWidget" alt="" coords="469,5,651,35"/>
+<area shape="rect" href="$classDataUI.html#a4fe81cd2e2b1ce92043875b62ea58961" title="DataUI::on_listExpWidget_clicked" alt="" coords="699,5,917,35"/>
+</map>

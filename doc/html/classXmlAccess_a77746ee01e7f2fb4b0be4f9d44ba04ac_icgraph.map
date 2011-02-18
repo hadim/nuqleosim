@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#ac439d89ae7c5375ab5c23be14fcbd652" title="DataHandler::expChanged" alt="" coords="180,5,351,35"/>
+<area shape="rect" href="$classDataHandler.html#a05e2b28950fa4c8192a377a202f52444" title="DataHandler::expRemove" alt="" coords="181,59,349,88"/>
+<area shape="rect" href="$classDataHandler.html#acfa379434bc9322778532ba47f77b504" title="DataHandler::molChanged" alt="" coords="180,112,351,141"/>
+<area shape="rect" href="$classDataHandler.html#aeefd277af2e605eda9650d50533cb7b1" title="DataHandler::molRemove" alt="" coords="181,165,349,195"/>
+<area shape="rect" href="$classDataHandler.html#ad1c46b4c30a7bfbafc9766917ce4281d" title="DataHandler::getExpWidget" alt="" coords="400,32,581,61"/>
+<area shape="rect" href="$classDataUI.html#a4fe81cd2e2b1ce92043875b62ea58961" title="DataUI::on_listExpWidget_clicked" alt="" coords="629,32,848,61"/>
+<area shape="rect" href="$classDataHandler.html#a5cc275631763290bcd424760ce7e4f05" title="DataHandler::getMolWidget" alt="" coords="401,139,580,168"/>
+<area shape="rect" href="$classDataUI.html#a31478203a5350ef31c16e08c2fe49ffa" title="DataUI::on_listMolWidget_clicked" alt="" coords="631,139,847,168"/>
+</map>

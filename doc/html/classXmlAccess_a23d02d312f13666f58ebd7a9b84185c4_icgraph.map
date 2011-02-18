@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#aa2855d4d8647cfed17953daf7de23565" title="DataHandler::expAdd" alt="" coords="263,5,407,35"/>
+<area shape="rect" href="$classXmlAccess.html#ac99141fd759006e8bca4392a0f07e190" title="XmlAccess::modifExperiment" alt="" coords="239,59,431,88"/>
+<area shape="rect" href="$classDataUI.html#a7958f08c2962fc10c53439b4fb061d6d" title="DataUI::on_addExpBut_clicked" alt="" coords="480,5,683,35"/>
+<area shape="rect" href="$classDataHandler.html#ac439d89ae7c5375ab5c23be14fcbd652" title="DataHandler::expChanged" alt="" coords="496,59,667,88"/>
+<area shape="rect" href="$classDataHandler.html#ad1c46b4c30a7bfbafc9766917ce4281d" title="DataHandler::getExpWidget" alt="" coords="731,59,912,88"/>
+<area shape="rect" href="$classDataUI.html#a4fe81cd2e2b1ce92043875b62ea58961" title="DataUI::on_listExpWidget_clicked" alt="" coords="960,59,1179,88"/>
+</map>

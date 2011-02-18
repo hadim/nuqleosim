@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCPU.html#a22c68941c309da7ab85eb447b8afdce9" title="CPU::progress" alt="" coords="131,59,237,88"/>
+<area shape="rect" href="$classCPU.html#a7421289f83a75f533000471fece5f9ad" title="CPU::step" alt="" coords="144,112,224,141"/>
+<area shape="rect" href="$classCPU.html#a65c759c48babbef5caf143a1e97495f5" title="CPU::stepDone" alt="" coords="128,165,240,195"/>
+<area shape="rect" href="$classCPU.html#a1624b933200c4d6220f3cfdfd32a824b" title="CPU::fillResults" alt="" coords="312,5,424,35"/>
+<area shape="rect" href="$classCPU.html#a339e1ba98af15feba333bbae3032bf32" title="CPU::protein_cycle" alt="" coords="301,112,435,141"/>
+<area shape="rect" href="$classCPU.html#a048719f09d2ec52a5f82da155e2c847e" title="CPU::rna_cycle" alt="" coords="312,165,424,195"/>
+<area shape="rect" href="$classCPU.html#a95e1c36e3c0c526309e46d6c0267633c" title="CPU::shuffleArray" alt="" coords="305,219,431,248"/>
+<area shape="rect" href="$classCPU.html#add368d67e72655252f776b359474eda3" title="CPU::transcriptor_cycle" alt="" coords="288,59,448,88"/>
+<area shape="rect" href="$classCPU.html#a0c4097468db56c733762805e4e9478c7" title="CPU::coords2index" alt="" coords="496,5,629,35"/>
+<area shape="rect" href="$classCPU.html#ae1d62cd31f9b2c462d646829c80e3370" title="CPU::look_around" alt="" coords="500,112,625,141"/>
+<area shape="rect" href="$classCPU.html#ad99183fe24589963b59c824347bf05b6" title="CPU::setFlag" alt="" coords="513,59,612,88"/>
+<area shape="rect" href="$classCPU.html#a47596a1c2c0fc5ca3faf99cd5ef5a016" title="CPU::unFlag" alt="" coords="515,165,611,195"/>
+<area shape="rect" href="$classCPU.html#a66dc7b8e9cde96adeddc77ef144724bf" title="CPU::look_limit" alt="" coords="507,219,619,248"/>
+</map>

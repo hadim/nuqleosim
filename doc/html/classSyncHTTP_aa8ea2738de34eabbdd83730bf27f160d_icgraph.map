@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classSyncHTTP.html#a2f9abef298a523be61aea60df8487f4c" title="send GET request and wait until finished" alt="" coords="196,5,335,35"/>
+<area shape="rect" href="$classSyncHTTP.html#ae15075a06c38ba242e7997f1efd326a5" title="send POST request and wait until finished" alt="" coords="193,59,337,88"/>
+<area shape="rect" href="$classSyncHTTP.html#a53534eafec392c8c1525058d6b99d1e0" title="SyncHTTP::syncPost" alt="" coords="388,59,532,88"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" href="$classMoleculeUI.html#ad94f253c0343fd49f33a4a9ae0be413f" title="MoleculeUI::on_commentsEdit_textChanged" alt="" coords="224,5,504,35"/>
+<area shape="rect" href="$classMoleculeUI.html#ae025a6644506d97ec47749e26683f052" title="MoleculeUI::on_concSpinBox_valueChanged" alt="" coords="224,59,504,88"/>
+<area shape="rect" href="$classMoleculeUI.html#ad43bd975b1258e3d1010749486373b39" title="MoleculeUI::on_emblEdit_editingFinished" alt="" coords="235,112,493,141"/>
+<area shape="rect" href="$classMoleculeUI.html#a522a52e5c1dd19eaf724a1868fb2da00" title="MoleculeUI::on_lengthEdit_editingFinished" alt="" coords="231,165,497,195"/>
+<area shape="rect" href="$classMoleculeUI.html#a53651c946e7dbd8b4747794387ea30c6" title="MoleculeUI::on_nameEdit_editingFinished" alt="" coords="232,219,496,248"/>
+<area shape="rect" href="$classMoleculeUI.html#a786444bebe302b97129899e814a62f94" title="MoleculeUI::on_pdbDownBut_clicked" alt="" coords="247,272,481,301"/>
+<area shape="rect" href="$classMoleculeUI.html#a7ee81fe5f1d727e9a25709e3e02dfdbe" title="MoleculeUI::on_pdbEdit_editingFinished" alt="" coords="237,325,491,355"/>
+<area shape="rect" href="$classMoleculeUI.html#ad8b7be6db9e0a44b39cc315cf370d6e9" title="MoleculeUI::on_sequenceEdit_textChanged" alt="" coords="227,379,501,408"/>
+<area shape="rect" href="$classMoleculeUI.html#ae29f1eb5c203016ce9f01eeeb850b36c" title="MoleculeUI::on_typeComboBox_activated" alt="" coords="232,432,496,461"/>
+<area shape="rect" href="$classMoleculeUI.html#a3dd73d79280320b172a041b3128961bb" title="MoleculeUI::on_uniprotkbEdit_editingFinished" alt="" coords="221,485,507,515"/>
+</map>

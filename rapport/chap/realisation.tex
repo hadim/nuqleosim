@@ -1,0 +1,392 @@
+\chapter{Réalisation}
+
+\section{Langage et bibliothèques retenus}
+
+La nécessité d'intégrer une simulation et une visualisation 3D en
+temps réel a conduit a développé \NQ en C++. Cependant, la complexité
+de développement qu'implique parfois le C++ est largement compensée
+par l'utilisation du framework Qt. En effet, dans ce projet Qt es
+utilisé en tant que framework et non en tant qu'une simple
+bibliothèque GUI comme GTK ou wxWidget. L'architecture de \NQ repose
+donc princiapelemnt sur Qt, cependant certain module comme celui de la
+modélisation reste indépendant de Qt afin de le rendre facilement
+portable en supprimant la dépendance à Qt.
+
+Qt implique des temps de compilation relativement long et des
+executables souvent de grosses taille. Cependant, ceci est largement
+compensé par plusieurs avantages tel que la rapidité d'execution des
+applications Qt, la rapidité de développement grâce à une API très
+bien documenté et la présence d'une large communauté. De plus, Qt est
+totalement multiplateforme.
+
+Voici une liste des technologies utilisées lors de la réalisation de \NQ.
+
+\paragraph{Framework Qt}(\url{http://qt.nokia.com/products/}) : est
+un framework orienté objet et développé en C++ par Qt Development
+Frameworks, filiale de Nokia. Elle offre des composants d'interface
+graphique (widgets), d'accès aux données, de connexions réseaux, de
+gestion des files d'exécution, d'analyse XML, etc. En plus d'être très
+complet comme framework, un autre avantage est son aspect multi
+plateforme. En effet, par simple recompilation du code source, un
+programme Qt pourra être porté vers des OS tel que GNU/Linux, Windows
+et Mac OS X.
+
+\paragraph{libQGLViewer}(\url{http://www.libqglviewer.com/}) : est une
+bibliothèque basé sur Qt qui facilite la création de scène OpenGL.  Il
+offre certaines fonctionnalités typiques des visonneurs 3D, comme la
+possibilité de déplacer la caméra en utilisant la souris, ce qui
+manque à la plupart des autres API. Les autres caractéristiques
+comprennent la manipulation de la souris, la superposition de widget
+vectorisé aux scènes 3D, la sélection d'objets. Il permet de créer des
+applications 3D complexes rapidement. Cette bibliothèque est utilisé
+pour la visualisation en temps réel lors de la simulation.
+
+\paragraph{Qwt}(\url{http://qwt.sourceforge.net/}) : est une
+bibliothèque basé sur Qt qui fournit un ensemble de widget destiné à
+faciliter l'affichage de graphique destiné aux applications techniques
+et scientifiques. Elle est utilisé pour l'affichage des résultats
+issus de la modélisation.
+
+\paragraph{XML}(\url{http://www.w3.org/XML/}) : est un langage
+informatique de balisage générique. Il sert essentiellement à
+stocker/transférer des données de type texte Unicode, structurées en
+champs arborescents. Il sera utilisé pour le stockage de la base de
+données d'objets biologiques. En effet, cette solution contrairement à
+des SGBD plus classiques tel que MySQL a l'avantage d'être indépendant
+(pas besoin de serveur SQL) et de faciliter l'échange de base de
+données (simple fichier XML). La cohérence de la base de données sera
+assurée par un fichier XML Schema qui est un langage de description de
+format de document XML permettant de définir la structure d'un
+document XML.
+
+\paragraph{CMake}(\url{http://www.cmake.org/}) : est est un \og moteur
+de production \fg{} multiplate-forme. Il permettra de recompiler
+facilement l'ensemble du code source sous différents OS. Il possède
+aussi des outils de génération de fichiers d'installation (.deb, .rpm,
+.exe, .tar.gz).
+
+\paragraph{Git}(\url{http://git-scm.com/}) : est est un logiciel de
+gestion de versions décentralisée. Son choix a été motivé par le fait
+qu'il soit open-source d'une part et d'une autre part pour sa grande
+flexibilité. Git est capable de gérer des cas complexes de conflits de
+fusion entre plusieurs versions. De plus, Git, créé par Linus Torvald,
+est aujourd'hui utilisé pour la gestion des sources du kernel de
+Linux. On imagine donc que si cet outil convient à la gestion d'un
+aussi gros projet (11,5 millions de lignes de codes) avec autant de
+collaborateurs, il conviendra parfaitement à un projet plus modeste.
+
+\section{Diagramme de classe}
+
+L'architecture est composé de plusieurs modules qui communique entre
+eux principalement via le mécanisme de signal et slot de Qt (un tel
+mécanisme existe aussi dans d'autre bibliothèque connu tel que Boost).
+
+Une version simplifié et une version détaillée sont présentes en
+annexe de ce rapport (\ref{diag_class} et
+\ref{diag_class_detail}). Voici un bref description des principaux
+modules :
+
+\begin{itemize}
+\item Le modèle de donnée est un ensemble de classe destiné à
+  modéliser les données manipulées lors de l'interfaçage avec la base
+  de donnée.
+\item \texttt{BioParser} est une classe abstraite qui permet de
+  facilement écrire des classes capables de parser n'importe quel
+  format de fichier biologique. Pour le moment, \NQ est capable de
+  parser les fichiers de type PDB.
+\item Le module \texttt{DataUI} et ses classes associés sont un
+  ensemble de classe widget chargé de l'interfaçage avec la base de
+  donnée.
+\item Le module de base de donnée permet la communication du reste de
+  l'application avec n'importe quel type de base de donnée via une
+  classe abstraite \texttt{DBAccess}. A ce jour, \NQ repose sur une
+  base de donnée de type XML.
+\item Le module \texttt{SimuUI} et ses classes associés sont un
+  ensemble de widget chargé du paramétrage de la simulation. Son rôle
+  est aussi de gérer le lancement et le suivi de la modélisation ainsi
+  que la mise à jour de la visualisation.
+\item \texttt{Computing Module} est chargé de la simulation du
+  nucléole. Il ne dépend pas de Qt afin de le rendre facilement
+  portable. Le système d'héritage permet, dans l'avenir, l'ajout de
+  manière de modéliser supplémentaires. Pour le moment, les calculs
+  sont effectués sur le CPU, mais il a été prévu de permettre l'ajout
+  de classe effectuant les calculs sur le GPU via différentes
+  librairies tel que OpenCL ou encore CUDA.
+\item \texttt{3D Module} est chargé d'afficher l'espace cellulaire
+  représentant le nucléole lors de la simulation.
+\item \texttt{AnaUI} est un ensemble de widget capable de générer des
+  résultats provenant d'une modélisation précédente.
+\end{itemize}
+
+\section{Base de données}
+
+Dans un premier temps \NQ doit permettre d'enregistrer des données
+relatives à des molécules ainsi qu'à des expériences. Une base de
+données à donc été mise en place. Elle permet dans un premier temps la
+saisie par l'utilisateur des différents champs d'intérêt, que ce soit
+pour une molécule ou une expérience (Fig. \ref{img_diagDB}. Dans le
+cas de la partie de la base de données gérant les molécules,
+l'utilisateur peut spécifier :
+
+\begin{itemize}
+	\item \texttt{id} : l'identifiant dans la base de données de \NQ
+	\item \texttt{name} : le nom de la molécule
+	\item \texttt{type} : le type moléculaire : ADN, ARN, protéine, ribosome, molécule
+	\item \texttt{sequence} : la séquence de la protéine (quelque soit son format)
+	\item \texttt{length} : la longueur de la séquence
+	\item \texttt{comments} : les éventuels commentaires de l'utilisateur
+	\item \texttt{concentration} : la concentration de la molécule dans le nucéole
+	\item \texttt{embl\_id} : l'identifiant de la molécule dans l'EMBL avec un lien vers la fiche
+	\item \texttt{uniprot\_id} : l'identifiant de la molécule dans UNIPROT avec un lien vers la fiche
+	\item \texttt{pdb\_id} : l'identifiant de la molécule dans la PDB avec un lien vers la fiche
+\end{itemize}
+
+Ainsi, il est possible de faire des modifications à tout instant. De
+plus, des liens vers la page web de la molécule dans diverses bases de
+données biologiques ont été mis en place pour compléter les
+caractéristiques des molécules. Afin de faciliter l'import de
+molécule, il a été mis en place un système de téléchargement
+automatique de fichier PDB via l'id PDB.
+
+Concernant les expériences, l'implémentation est similaire, si ce
+n'est que les noms des champs à compléter est différent :
+
+\begin{itemize}
+	\item \texttt{id} : l'identifiant dans la base de données de \NQ
+	\item \texttt{name} : le nom de la molécule
+	\item \texttt{type} : le type moléculaire : ADN, ARN, protéine, ribosome, molécule
+	\item \texttt{comments} : les éventuels commentaires de l'utilisateur
+	\item \texttt{date} : l'identifiant de la molécule dans UNIPROT avec un lien vers la fiche
+	\item \texttt{author} : l'identifiant de la molécule dans la PDB avec un lien vers la fiche
+\end{itemize}
+
+Cette base de données doit être rechargée à chaque ouverture de \NQ et
+enregistrée à chaque modification. Voici, un aperçu d'un fichier XML
+de la base de donnée de \NQ vide.
+
+\begin{lstlisting}
+<nucleolus_db>
+	<experiments>
+		<experiment>
+			<author/>
+			<comments/>
+			<date/>
+			<name/>
+			<images>
+				<image>
+					<comments/>
+					<id/>
+					<name/>
+					<path/>
+				<image>
+			<images>
+	</experiments>
+	<molecules>
+		<molecule>
+			<coments/>
+			<default_concentration/>
+			<name/>
+			<sequence/>
+			<sequence_length/>
+			<type/>
+			<embl_id/>
+			<pdb_id/>
+			<uniprotkb_id/>
+		<molecule>
+	<molecules>
+</nucleolus_db>
+\end{lstlisting}
+
+Enfin, il est possible de compléter les \texttt{experiences} par une
+ou des images. En effet, tout comme la saisie et la consultation des
+informations relative à une expérience ou une molécule, l'ajout
+d'images est pris en charge par la base de données.
+
+\section{Modélisation du nucléole}
+
+Comme vu lors de la conception, la modélisation du nucléole est basé
+sur une approche multi-agents. Les différentes molécules ou systèmes
+qui entrent en jeu peuvent être assimilés à des agents qui ont des
+caractéristiques, qui réalisent des actions et qui interagissent entre
+eux ou avec leur environnement.
+
+\subsection{Environnement}
+
+Afin de modéliser le nucléole où se déroule la simulation, un
+environnement tridimensionnel a été mis en place. Le nucléole est
+modélisé comme étant un parallélépipède rectangle dont les trois
+dimensions sont renseignées par l'utilisateur. En outre, les trois
+composantes du nucléole que constituent le FC, le DFC et le GC sont
+elles aussi assimilées à des structures parallélépipédiques
+tridimensionnelles dont les dimensions sont calculées via un
+pourcentage de l'environnement nucléolaire total. On retrouve ainsi au
+centre le FC entouré du DFC lui même entouré du GC
+(Fig. \ref{img_schemaSimu}. Même si aucune membrane physique ne
+délimite ces différentes composantes dans la \og{} réalité \fg{}, afin
+de mieux les distinguer au cours de la simulation, il est possible de
+faire apparaître chaque compartiment dans une couleur distincte des
+deux autres.
+
+\subsection{Agents}
+
+Une fois l'environnement mis en place, il faut placer les différents
+éléments qui vont entrer en jeux dans la simulation. De plus, chaque
+élément possède des contraintes de par son type même ou imposées par
+l'utilisateur. Ainsi, les différents agents sont placés aléatoirement
+tout en respectant certaines règles :
+
+\begin{itemize}
+	\item deux éléments ne peuvent pas être en même temps sur une même
+  \og{} case \fg{}.
+	\item un élément ne peut pas être placé dans une composante dans
+      laquelle il ne prend pas part.
+\end{itemize}
+
+Un nombre déterminé de chaque agent doit être placé pour initialiser
+la simulation. Pour cela l'utilisateur précise pour chaque molécule
+les composantes dans lesquelles il veut les situer et dans quelles
+proportions. Ainsi, une molécule peut se déplacer dans les trois
+compartiments, mais n'être présente au début de la simulation que dans
+l'un des trois par exemple (Annexe \ref{diagSMA}). Cependant si une
+molécule ne participe pas à la constitution d'une composante, il ne
+peut pas y avoir de molécules de ce type dans cette composante.
+
+Au cours de la simulation, les agents peuvent se déplacer au sein de
+l'environnement. Dans le but de ne favoriser aucun agent devant un
+autre, ils sont déplacés chacun leur tour dans un ordre aléatoire. De
+plus, chaque molécule possède sa propre probabilité de
+déplacement. Ainsi, une fois un agent sélectionné aléatoirement, il
+est déplacé dans une case voisine, respectant les contraintes
+appliquées à l'agent, aléatoirement.
+
+\image{schemaSimu}{Interactions des différents agents entre eux et
+  avec leur environnement.}{1}
+
+Lors des déplacements on distingue les molécules protéiques des
+molécules d'ARN. En effet, les ARN subissent certaines étapes de
+maturation avant de sortir du nucléole et du noyau. Pour modéliser ce
+comportement une probabilité de maturation d'un ARN à proximité d'une
+protéine a été définie. L'ARN maturé se distingue de sa forme précoce
+de par sa capacité à accéder à la composante nucléolaire suivante ou
+sa sortie du nucléole pour aller constituer les ribosomes.
+
+\subsection{Déroulement}
+
+Lorsque une simulation est initiée, les données sont enregistrées à
+chaque pas de temps. Soit : pour chaque type de molécules, leur
+quantité dans chaque composante est conservée. En parallèle, leurs
+mouvements sont calculés pour chaque pas de temps et transmis au
+module gérant la visualisation pour permettre l'affichage en trois
+dimensions de la simulation en cours (Fig. \ref{img_debutSimu}). Cet
+échange mis en place permet également de mettre en pause une
+simulation en cours ou de la stopper. Une fois le temps de simulation,
+spécifié par l'utilisateur, terminé l'ensemble des données rassemblées
+peuvent être traitées.
+
+\subsection{Résultats}
+
+Dans un dernier temps, une fois la simulation terminée, l'utilisateur
+peut sélectionner parmi les diverses molécules présentes dans la
+simulation, celles dont il veut observer l'évolution. Il peut alors
+décider d'afficher les résultats sous forme de graphe ou bien dans un
+tableur qu'il pourra exporter respectivement au format PNG ou CSV
+(Fig. \ref{img_grapheResu} et Fig. \ref{img_tabResu}).
+
+\section{Fonctionnement de l'interface}
+
+\image{accueil}{Interface d'ouverture de \NQ.}{1}
+
+Tout comme l'implémentation du projet peut être scindée en trois
+parties principales, l'interface permettant à l'utilisateur d'utiliser
+l'application comprend à son ouverture trois parties principales,
+chacune associée à un onglet (Fig. \ref{img_accueil}).
+
+\subsection{Onglet "Database"}
+
+\image{BDMolecule}{Interface de saisie ou de modification de données
+  sur une molécule.}{1}
+
+\image{BDExp}{Interface de saisie ou de modification des données d'une
+  expérience.}{1}
+
+Le premier onglet de \NQ permet d'accéder à la base de données
+constituée par les utilisateurs. L'interface permet la distinction
+entre les molécules pouvant prendre part à une simulation ou une
+expérience (Fig. \ref{img_BDMolecule}), des expériences elles-mêmes
+(Figure ref BQExp). Pour chaque molécule, il est possible de rentrer
+son identifiant, son nom, sa taille, sa concentration, son identifiant
+dans diverses bases de données ainsi que sa séquence et de préciser sa
+nature dans une liste de molécules pré-rentrée (ADN, ARN, protéique,
+etc). Un lien est alors mis en place pour permettre d'accéder
+directement aux informations sur les bases de données internet
+spécifiées. Concernant l'enregistrement d'une expérience, il est
+possible, de même, de préciser divers champs comme l'identifiant de
+l'expérience, l'expérimentateur et la date. Dans le cas des
+expériences, des images peuvent être associées. Enfin, pour les deux
+un champs \og{} \texttt{comments} \fg{} a été intégré pour permettre à
+l'utilisateur de rentrer des commentaires ou ajouter des données dont
+les champs n'existent pas encore.
+
+\subsection{Onglet "Simulation"}
+\image{paramSimu}{Interface de paramétrage d'une simulation.}{1}
+
+Le deuxième onglet de \NQ permet le paramétrage d'une simulation
+(Fig. \ref{img_paramSimu}). Ce paramétrage peut être scindé en deux en
+distinguant les paramètres se rapportant au nucléole, des données se
+rattachant aux molécules intervenant dans la simulation. Une
+séparation spatiale sur l'interface est alors opérée. En haut les
+grandeurs spécifiant le nucléole modélisé et en dessous les variables
+discriminant les molécules. Les données relatives aux molécules sont
+accessibles en sélectionnant une molécule parmi celles de la base de
+données de \NQ. L'utilisateur doit alors sélectionner (en cochant la
+case dédiée) celles qui l'intéressent, puis spécifier leurs
+différentes concentrations dans chaque composante ainsi que les
+composantes auxquelles elles peuvent avoir accès. Toute molécule
+sélectionnée est alors surlignée en rouge dans la liste, pour
+permettre à l'utilisateur d'avoir une vue d'ensemble de sa simulation.
+
+\image{debutSimu}{Fenêtre de suivi en temps réel de la simulation.}{1}
+
+Une fois la simulation paramétrée, l'utilisateur peut l'initier en
+cliquant sur le bouton \og{} \texttt{Launch} \fg{}. Une nouvelle
+fenêtre s'ouvre alors (Fig. \ref{img_debutSimu}). La simulation en
+cours peut alors être mise en pause ou stoppée à tout instant. Afin de
+différencier aisément les différentes molécules en jeu, une couleur
+différente leur est attribuée dans la modélisation (une légende
+permettant de faire le lien). De plus dans l'optique de distinguer les
+ARN des autres molécules et pour rester plus ou moins en accord avec
+la réalité, les sphères modélisant les ARN sont plus petites. Enfin
+pour laisser une certaine marge de liberté a l'utilisateur, ce dernier
+peut moduler certains aspects de la simulation. Effectivement, il peut
+modifier la taille des molécules et la vitesse de la simulation. Il
+peut faire apparaître indépendamment les différentes composantes (Fig.
+\ref{img_duringSimu}) ou encore ne visualiser que les molécules
+présentes dans une ou plusieurs composantes. Pour terminer, des
+fonctions de zoom, de contrôle de la transparence des composantes,
+d'affichage des axes ou encore d'une grille sont disponibles.
+
+\image{duringSimu}{Visualisation possible des différentes composantes.}{1}
+
+\subsection{Onglet "Results"}
+\image{paramResu}{Onglet de paramétrage de la visualisation des
+  résultats de la simulation.}{1}
+
+Lorsque la simulation est terminée le troisième et dernier onglet
+\texttt{résultat} est alors opérationnel. C'est-à-dire que
+l'utilisateur peut organiser les résultats issus de la simulation
+comme il le souhaite dans un ou divers graphes
+(Fig. \ref{img_grapheResu}) ou tableaux (Fig. \ref{img_tabResu}). Afin
+de rendre l'interface la plus intuitive possible, la sélection des ARN
+à analyser se fait par compartiments. Chaque graphe ou tableau est
+alors généré dans un nouvel onglet, dans la partie basse de l'onglet,
+et peut être exporté aux formats PNG ou CSV par un simple clic sur le
+bouton approprié.
+
+\image{tabResu}{Exemple de tableau de résultats.}{1}
+
+\image{grapheResu}{Exemple de graphe de résultats.}{1}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

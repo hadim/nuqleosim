@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataUI.html#a72fee227a57a0e49e75156741a863b6d" title="DataUI::expRemove" alt="" coords="211,5,349,35"/>
+<area shape="rect" href="$classDataHandler.html#a79180a8302a53c16d9c52ebf38dcb972" title="DataHandler::getExpModel" alt="" coords="192,59,368,88"/>
+<area shape="rect" href="$classDataHandler.html#a0842a3e769d5ff0fd99acadbd90dd74c" title="DataHandler::getMolModel" alt="" coords="193,112,367,141"/>
+<area shape="rect" href="$classDataUI.html#aaa01e83d875c01db887e02a0f4f1ce98" title="DataUI::molRemove" alt="" coords="211,165,349,195"/>
+</map>

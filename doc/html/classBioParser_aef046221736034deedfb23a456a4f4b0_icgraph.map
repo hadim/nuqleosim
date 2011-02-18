@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classPDBParser.html#ab34a64a1f70bda3f3770adee84c0cff3" title="PDBParser::parseFile" alt="" coords="187,32,333,61"/>
+<area shape="rect" href="$classPDBParser.html#a5f07560a4f624297d2ce0e98f80e36cb" title="PDBParser::getMolecule" alt="" coords="409,5,572,35"/>
+<area shape="rect" href="$classPDBParser.html#aaa8e7b92adc48dc8f04d337e3c63dd70" title="PDBParser::getMoleculeFromPath" alt="" coords="381,59,600,88"/>
+<area shape="rect" href="$classMoleculeUI.html#a786444bebe302b97129899e814a62f94" title="MoleculeUI::on_pdbDownBut_clicked" alt="" coords="649,5,884,35"/>
+</map>

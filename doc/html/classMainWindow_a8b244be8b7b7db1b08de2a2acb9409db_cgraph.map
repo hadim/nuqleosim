@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataUI.html#a3be475a32475370831d632dba780a0ed" title="DataUI::displayData" alt="" coords="268,85,404,115"/>
+<area shape="rect" href="$classDataUI.html#a3147444e8a9fca7b9016233cb3a2e24e" title="DataUI::getMolModel" alt="" coords="264,139,408,168"/>
+<area shape="rect" href="$classSimuUI.html#ab1fdc34d8c4ef56bc8ea7f871bd0c811" title="SimuUI::loadMolList" alt="" coords="267,192,405,221"/>
+<area shape="rect" href="$classMainWindow.html#a9cc2ce528c1318b7e2603f14949a7365" title="MainWindow::makeDefaultConfig" alt="" coords="231,245,441,275"/>
+<area shape="rect" href="$classDataUI.html#a72fee227a57a0e49e75156741a863b6d" title="DataUI::expRemove" alt="" coords="509,5,648,35"/>
+<area shape="rect" href="$classDataHandler.html#a79180a8302a53c16d9c52ebf38dcb972" title="DataHandler::getExpModel" alt="" coords="491,59,667,88"/>
+<area shape="rect" href="$classDataHandler.html#a0842a3e769d5ff0fd99acadbd90dd74c" title="DataHandler::getMolModel" alt="" coords="492,112,665,141"/>
+<area shape="rect" href="$classDataUI.html#aaa01e83d875c01db887e02a0f4f1ce98" title="DataUI::molRemove" alt="" coords="509,165,648,195"/>
+</map>

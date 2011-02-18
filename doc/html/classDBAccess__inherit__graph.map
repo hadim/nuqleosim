@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html" title="{XmlAccess\n|# path2db\l# dbdoc\l# root\l# fdb\l# schema\l# query\l# valid\l# molMaxId\l# imgMaxId\l# expMaxId\l|+ XmlAccess()\l+ ~XmlAccess()\l+ validate()\l+ xquery()\l+ getMolecules()\l+ getExperiments()\l+ getMolecule()\l+ getExperiment()\l+ addMolecule()\l+ addExperiment()\l+ removeMolecule()\l+ removeExperiment()\l+ modifMolecule()\l+ modifExperiment()\l+ save()\l# setMaxId()\l}" alt="" coords="5,160,155,696"/>
+</map>

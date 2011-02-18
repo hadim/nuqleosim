@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#a05e2b28950fa4c8192a377a202f52444" title="DataHandler::expRemove" alt="" coords="504,5,672,35"/>
+<area shape="rect" href="$classXmlAccess.html#ac99141fd759006e8bca4392a0f07e190" title="XmlAccess::modifExperiment" alt="" coords="260,59,452,88"/>
+<area shape="rect" href="$classDataHandler.html#ad1c46b4c30a7bfbafc9766917ce4281d" title="DataHandler::getExpWidget" alt="" coords="723,32,904,61"/>
+<area shape="rect" href="$classDataUI.html#a4fe81cd2e2b1ce92043875b62ea58961" title="DataUI::on_listExpWidget_clicked" alt="" coords="952,32,1171,61"/>
+<area shape="rect" href="$classDataHandler.html#ac439d89ae7c5375ab5c23be14fcbd652" title="DataHandler::expChanged" alt="" coords="503,59,673,88"/>
+</map>

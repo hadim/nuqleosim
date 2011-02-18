@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html#ac3ecada7fbd4afc434be0fad0abe9e7b" title="XmlAccess::getExperiments" alt="" coords="211,32,397,61"/>
+<area shape="rect" href="$classXmlAccess.html#a59cfaec842d375fa0e4031c66683033a" title="XmlAccess::getExperiment" alt="" coords="447,5,625,35"/>
+<area shape="rect" href="$classDataHandler.html#a981be0800b96408e21782d35cc1a0735" title="DataHandler::loadData" alt="" coords="460,59,612,88"/>
+<area shape="rect" href="$classDataHandler.html#ad1c46b4c30a7bfbafc9766917ce4281d" title="DataHandler::getExpWidget" alt="" coords="675,5,856,35"/>
+<area shape="rect" href="$classDataUI.html#a4fe81cd2e2b1ce92043875b62ea58961" title="DataUI::on_listExpWidget_clicked" alt="" coords="904,5,1123,35"/>
+<area shape="rect" href="$classDataHandler.html#ad5d91831abbb6c5a7b1ab238a5235a8c" title="DataHandler::DataHandler" alt="" coords="680,59,851,88"/>
+</map>

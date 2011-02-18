@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- type description -->
+
+    <xsd:simpleType name="molecule_type">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="protein"/>
+            <xsd:enumeration value="adn"/>
+            <xsd:enumeration value="arn"/>
+            <xsd:enumeration value="ribosome"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="sequence_length_type">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minExclusive value="0"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="concentration_type">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxExclusive value="10000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="id_type">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- images and molecules -->
+
+    <xsd:element name="image">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="name" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="comments" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="path" minOccurs="1" type="xsd:string"/>
+            </xsd:all>
+            <xsd:attribute name="id" type="id_type" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="images">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="image" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="experiments">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="experiment" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="experiment">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="name" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="comments" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="date" minOccurs="1" maxOccurs="1" type="xsd:date"/>
+                <xsd:element name="author" minOccurs="1" maxOccurs="1" type="xsd:string"/>
+                <xsd:element ref="images" minOccurs="1" maxOccurs="1"/>
+            </xsd:all>
+            <xsd:attribute name="id" type="id_type" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="molecules">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="molecule" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="molecule">
+        <xsd:complexType>
+            <xsd:all>
+                <xsd:element name="name" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="type" minOccurs="1" type="molecule_type"/>
+                <xsd:element name="sequence_length" minOccurs="1" type="sequence_length_type"/>
+                <xsd:element name="comments" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="default_concentration" minOccurs="1" type="concentration_type"/>
+                <xsd:element name="embl_id" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="uniprotkb_id" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="pdb_id" minOccurs="1" type="xsd:string"/>
+                <xsd:element name="sequence" minOccurs="1" type="xsd:string"/>
+            </xsd:all>
+            <xsd:attribute name="id" type="id_type" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- definition of element type -->
+
+    <xsd:element name="nucleolus_db">
+        <xsd:complexType>
+            <xsd:all>
+                
+                <xsd:element ref="experiments" minOccurs="1" maxOccurs="1"/>
+                <xsd:element ref="molecules" minOccurs="1" maxOccurs="1"/>
+
+            </xsd:all>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

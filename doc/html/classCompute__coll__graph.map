@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$structUnitFrame.html" title="{UnitFrame\n|+ compartment\l+ flag\l+ color\l+ pos\l|}" alt="" coords="5,272,115,416"/>
+<area shape="rect" href="$structPosition.html" title="{Position\n|+ x\l+ y\l+ z\l|}" alt="" coords="27,5,93,131"/>
+<area shape="rect" href="$structColor.html" title="{Color\n|+ r\l+ g\l+ b\l|}" alt="" coords="139,5,189,131"/>
+<area shape="rect" href="$structRna__struct.html" title="{Rna_struct\n|+ type\l+ FC_access\l+ DFC_access\l+ GC_access\l+ ext_access\l+ flag\l+ color\l|}" alt="" coords="139,244,245,444"/>
+<area shape="rect" href="$structResu__struct.html" title="{Resu_struct\n|+ nbPlots\l+ stepSize\l+ gc_rna1\l+ gc_rna2\l+ gc_rna3\l+ dfc_rna1\l+ dfc_rna2\l+ dfc_rna3\l+ fc_rna1\l+ fc_rna2\l+ fc_rna3\l+ out_rna\l|}" alt="" coords="269,197,360,491"/>
+</map>

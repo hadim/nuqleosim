@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCPU.html#a341326f8426ac66376864c19191fbe2c" title="CPU::get_results" alt="" coords="243,5,363,35"/>
+<area shape="rect" href="$classVisuUI.html#ad493ae95e4872a7aa1ce4a2f01b5e3a5" title="VisuUI::setTitle" alt="" coords="247,59,359,88"/>
+<area shape="rect" href="$classSimuHandler.html#a8be18a0adebca7f856bcdbdec9e1e444" title="SimuHandler::simuIsDone" alt="" coords="217,112,388,141"/>
+<area shape="rect" href="$classVisuUI.html#af5432586df4ead2be26a98471f7810b7" title="VisuUI::simuIsDone" alt="" coords="235,165,371,195"/>
+</map>

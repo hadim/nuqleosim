@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nucleolus_db>
+ <experiments>
+  <experiment id="1">
+   <author>HadiM</author>
+   <comments>no comment</comments>
+   <date>2011-04-28</date>
+   <name>exp 1</name>
+   <images>
+    <image id="105">
+     <comments>yeahhhhhhh</comments>
+     <id/>
+     <name>babar</name>
+     <path>img/nrmicro1597-f2.jpg</path>
+    </image>
+    <image id="106">
+     <comments>dqsdqsd</comments>
+     <id/>
+     <name>lui</name>
+     <path>img/nucleolus.jpg</path>
+    </image>
+   </images>
+  </experiment>
+  <experiment id="2">
+   <author>Jeep</author>
+   <comments>no comment</comments>
+   <date>2010-12-05</date>
+   <name>exp 2</name>
+   <images>
+    <image id="135">
+     <comments>yeahhhhhhh</comments>
+     <id/>
+     <name>babar</name>
+     <path>img/nucleolus2.jpg</path>
+    </image>
+    <image id="136">
+     <comments>meuhhhhhhhhhh</comments>
+     <id/>
+     <name>toi</name>
+     <path>img/nucleolus3.jpg</path>
+    </image>
+   </images>
+  </experiment>
+ </experiments>
+ <molecules>
+  <molecule id="5">
+   <comments>http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;dopt=Abstract&amp;list_uids=1272390</comments>
+   <default_concentration/>
+   <embl_id/>
+   <name>INSULIN</name>
+   <pdb_id>1ZNI</pdb_id>
+   <sequence>>1ZNI:A|PDBID|CHAIN|SEQUENCE
+GIVEQCCTSICSLYQLENYCN
+>1ZNI:B|PDBID|CHAIN|SEQUENCE
+FVNQHLCGSHLVEALYLVCGERGFFYTPKA
+>1ZNI:C|PDBID|CHAIN|SEQUENCE
+GIVEQCCTSICSLYQLENYCN
+>1ZNI:D|PDBID|CHAIN|SEQUENCE
+FVNQHLCGSHLVEALYLVCGERGFFYTPKA</sequence>
+   <sequence_length>51</sequence_length>
+   <type>protein</type>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="6">
+   <comments>http://dx.doi.org/10.1002/psc.496</comments>
+   <default_concentration/>
+   <embl_id/>
+   <name>CEPHAIBOL A</name>
+   <pdb_id>1OB4</pdb_id>
+   <sequence>>1OB4:A|PDBID|CHAIN|SEQUENCE
+XFAAAAGLVAPQVPAPF</sequence>
+   <sequence_length>17</sequence_length>
+   <type>molecule</type>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="7">
+   <comments/>
+   <default_concentration/>
+   <embl_id/>
+   <name>Human Fibrillarin</name>
+   <pdb_id>2IPX</pdb_id>
+   <sequence>>2IPX:A|PDBID|CHAIN|SEQUENCE
+GKNVMVEPHRHEGVFICRGKEDALVTKNLVPGESVYGEKRVSISEGDDKIEYRAWNPFRSKLAAAILGGVDQIHIKPGAK
+VLYLGAASGTTVSHVSDIVGPDGLVYAVEFSHRSGRDLINLAKKRTNIIPVIEDARHPHKYRMLIAMVDVIFADVAQPDQ
+TRIVALNAHTFLRNGGHFVISIKANCIDSTASAEAVFASEVKKMQQENMKPQEQLTLEPYERDHAVVVGVYRP</sequence>
+   <sequence_length>233</sequence_length>
+   <type>molecule</type>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="8">
+   <comments/>
+   <default_concentration/>
+   <embl_id/>
+   <name>RRM_1 domain of NCL protein</name>
+   <pdb_id>2fc8</pdb_id>
+   <sequence>>2FC8:A|PDBID|CHAIN|SEQUENCE
+GSSGSSGPNARSQPSKTLFVKGLSEDTTEETLKESFDGSVRARIVTDRETGSSKGFGFVDFNSEEDAKAAKEAMEDGEID
+GNKVTLDWAKPKGEGGSGPSSG</sequence>
+   <sequence_length>102</sequence_length>
+   <type/>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="10">
+   <comments></comments>
+   <default_concentration>0</default_concentration>
+   <embl_id></embl_id>
+   <name>CEPHAIBOL A</name>
+   <pdb_id>1OB4</pdb_id>
+   <sequence></sequence>
+   <sequence_length>17</sequence_length>
+   <type>protein</type>
+   <uniprotkb_id></uniprotkb_id>
+  </molecule>
+ </molecules>
+</nucleolus_db>

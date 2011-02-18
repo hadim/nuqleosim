@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$classBioParser.html" title="BioParser" alt="" coords="5,5,83,35"/>
+<area shape="rect" href="$classPDBParser.html" title="PDBParser" alt="" coords="131,5,216,35"/>
+</map>

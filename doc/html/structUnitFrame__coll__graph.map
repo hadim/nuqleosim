@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$structPosition.html" title="{Position\n|+ x\l+ y\l+ z\l|}" alt="" coords="5,5,72,131"/>
+<area shape="rect" href="$structColor.html" title="{Color\n|+ r\l+ g\l+ b\l|}" alt="" coords="96,5,147,131"/>
+</map>

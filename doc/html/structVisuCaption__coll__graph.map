@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$structProtCaption.html" title="{ProtCaption\n|+ name\l+ color\l|}" alt="" coords="5,197,93,304"/>
+<area shape="rect" href="$structColor.html" title="{Color\n|+ r\l+ g\l+ b\l|}" alt="" coords="87,5,137,131"/>
+<area shape="rect" href="$structRnaCaption.html" title="{RnaCaption\n|+ name\l+ color\l|}" alt="" coords="117,197,205,304"/>
+</map>

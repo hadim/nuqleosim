@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html#aab33a0da2e83a13180881dbac41d9d38" title="XmlAccess::modifMolecule" alt="" coords="228,32,407,61"/>
+<area shape="rect" href="$classXmlAccess.html#a77746ee01e7f2fb4b0be4f9d44ba04ac" title="XmlAccess::save" alt="" coords="256,85,379,115"/>
+<area shape="rect" href="$classXmlAccess.html#a0ef0a98567319205f1910a89363c74dd" title="XmlAccess::addMolecule" alt="" coords="468,5,636,35"/>
+<area shape="rect" href="$classXmlAccess.html#a29c0802cadce804bc8f08e28099ba154" title="XmlAccess::removeMolecule" alt="" coords="457,59,647,88"/>
+</map>

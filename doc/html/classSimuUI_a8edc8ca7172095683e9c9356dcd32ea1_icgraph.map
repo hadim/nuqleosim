@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" href="$classSimuUI.html#a292d5768559d3ddc31db80f3a44f7a74" title="SimuUI::on_dfcAccessBox_stateChanged" alt="" coords="180,5,444,35"/>
+<area shape="rect" href="$classSimuUI.html#a5362bdadc7592f2aac7bf68047ad528c" title="SimuUI::on_dfcConcBox_valueChanged" alt="" coords="185,59,439,88"/>
+<area shape="rect" href="$classSimuUI.html#a8595653c4eac19c8aaf42d702962f966" title="SimuUI::on_fcAccessBox_stateChanged" alt="" coords="183,112,441,141"/>
+<area shape="rect" href="$classSimuUI.html#aaab233a57c336dc9f9062102e5d62b59" title="SimuUI::on_fcConcBox_valueChanged" alt="" coords="189,165,435,195"/>
+<area shape="rect" href="$classSimuUI.html#a699cbc2e4863d35bab8fb75a996b92e7" title="SimuUI::on_gcAccessBox_stateChanged" alt="" coords="181,219,443,248"/>
+<area shape="rect" href="$classSimuUI.html#a97abe128616e0c3a0d75e5795d949475" title="SimuUI::on_gcConcBox_valueChanged" alt="" coords="188,272,436,301"/>
+<area shape="rect" href="$classSimuUI.html#a12cc6266bcb1ae8af2849613b05936cf" title="SimuUI::on_molsWidget_clicked" alt="" coords="208,325,416,355"/>
+<area shape="rect" href="$classSimuUI.html#aa105067c6bb49db491c87e9a7cf56804" title="SimuUI::on_movProbaBox_valueChanged" alt="" coords="180,379,444,408"/>
+<area shape="rect" href="$classSimuUI.html#a9c6e8b9087d078946fc227e8d9b7af65" title="SimuUI::SimuUI" alt="" coords="495,112,609,141"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCPU.html#a0c4097468db56c733762805e4e9478c7" title="CPU::coords2index" alt="" coords="165,5,299,35"/>
+<area shape="rect" href="$classCPU.html#ae1d62cd31f9b2c462d646829c80e3370" title="CPU::look_around" alt="" coords="169,59,295,88"/>
+<area shape="rect" href="$classCPU.html#a66dc7b8e9cde96adeddc77ef144724bf" title="CPU::look_limit" alt="" coords="176,112,288,141"/>
+<area shape="rect" href="$classCPU.html#ad99183fe24589963b59c824347bf05b6" title="CPU::setFlag" alt="" coords="183,165,281,195"/>
+<area shape="rect" href="$classCPU.html#a47596a1c2c0fc5ca3faf99cd5ef5a016" title="CPU::unFlag" alt="" coords="184,219,280,248"/>
+</map>

@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%
+%% Rappels divers %%
+%%%%%%%%%%%%%%%%%%%%
+
+%% Hierarchie des sections %%
+%partie                      \part{titre}
+%chapitre                    \chapter{titre}
+%section                     \section{titre}
+%sous-section                \subsection{titre}
+%sous-section (niveau 2)     \subsubsection{titre}
+%sous-section (niveau 3)     \paragraph{titre}
+%sous-section (niveau 4)     \subparagraph{titre}
+
+%% Références %%
+%\label{marque}, ~\ref{marque} et ~\pageref{marque}
+
+%% Espacement et saut %%                                                   
+%\hspace{l }    espace horizontal, ignoré ́en cas de saut de ligne                                               
+%\vspace{h}     espace vertical, ignoré ́en cas de saut de page            
+%\hspace*{l }   espace horizontal             
+%\vspace*{h}    espace vertical                     
+%\hfill         espace élastique horizontal                     
+%\vfill         espace élastique vertical                   
+%\hrulefill     ligne élastique horizontale                     
+%\dotfill       points élastiques horizontaux             
+%\smallskip     petit espace vertical
+%\medskip       moyen espace vertical            
+%\bigskip       grand espace vertical
+
+%% Utilisation des sous figures %%
+%\begin{figure}[htp]
+%  \centering
+%  \subfigure[Image d'origine]{\label{fig:edge-a}\includegraphics[scale=0.75]{toucan.eps}}                
+%  \subfigure[Après une détection des contours de Laplace]{\label{fig:contour-b}\includegraphics[scale=0.75]{laplace_toucan.eps}} \\
+%  \subfigure[Après une détection des contours de Sobel]{\label{fig:contour-c}\includegraphics[scale=0.75]{sobel_toucan.eps}}
+%  \caption{Différents algorithmes de détection des contours}
+%  \label{fig:contour}
+%\end{figure}
+
+%% Modification compteur de titre %%
+%\tocdepth (tab le of contents depth) définissant quel est le niveau (ou profondeur) de titre maxi dans la table des matières.
+%\secnumdepth (section numbering depth) stipulant la profondeur de la numérotation des titres dans le document

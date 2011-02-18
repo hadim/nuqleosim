@@ -1,0 +1,150 @@
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/theme/monTheme.sty,v 1.0 15/02/2011 14:00:07 G.FALLOURD-M.LEBRETON Exp $
+\mode<presentation>
+\definecolor{sectionColor}{RGB}{0,102,153}
+\definecolor{subsectionColor}{RGB}{51,153,204}
+\definecolor{sectionTextColor}{RGB}{0,0,0}
+\definecolor{subsectionTextColor}{RGB}{255,255,255}
+\definecolor{leftFootlineColor}{RGB}{0,102,255}
+\definecolor{middleFootlineColor}{RGB}{51,153,255}
+\definecolor{rightFootlineColor}{RGB}{102,204,255}
+\definecolor{authorColor}{RGB}{0,0,0}
+\definecolor{footlineTitleColor}{RGB}{0,0,0}
+\definecolor{instituteColor}{RGB}{0,0,0}
+\definecolor{dateColor}{RGB}{0,0,0}
+\definecolor{pageColor}{RGB}{0,0,0}
+\definecolor{titleColor}{RGB}{102,153,204}
+\definecolor{titleTextColor}{RGB}{0,0,0}
+\definecolor{bodyColor}{RGB}{255,255,255}
+\definecolor{normalTextColor}{RGB}{0,0,0}
+\definecolor{exampleTextColor}{RGB}{51,102,51}
+\definecolor{alertTextColor}{RGB}{153,51,51}
+\definecolor{chipColor}{RGB}{0,102,153}
+\definecolor{chipTextColor}{RGB}{255,255,255}
+\definecolor{normalBlockColor}{RGB}{102,153,204}
+\definecolor{normalTitleBlockColor}{RGB}{0,102,153}
+\definecolor{normalBlockTextColor}{RGB}{255,255,255}
+\definecolor{normalBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{exampleBlockColor}{RGB}{51,153,102}
+\definecolor{exampleTitleBlockColor}{RGB}{0,102,51}
+\definecolor{exampleBlockTextColor}{RGB}{255,255,255}
+\definecolor{exampleBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{alertBlockColor}{RGB}{204,153,153}
+\definecolor{alertTitleBlockColor}{RGB}{153,51,51}
+\definecolor{alertBlockTextColor}{RGB}{255,255,255}
+\definecolor{alertBlockTitleTextColor}{RGB}{255,255,255}
+\setbeamercolor{section in head/foot}{bg=sectionColor, fg=sectionTextColor}
+\setbeamercolor{subsection in head/foot}{bg=subsectionColor, fg=subsectionTextColor}
+\setbeamercolor*{block title}{fg=normalBlockTitleTextColor,bg=normalTitleBlockColor}
+\setbeamercolor*{block body}{fg=normalBlockTextColor,bg=normalBlockColor}
+\setbeamercolor*{block title alerted}{fg=alertBlockTitleTextColor,bg=alertTitleBlockColor}
+\setbeamercolor*{block body alerted}{fg=alertBlockTextColor,bg=alertBlockColor}
+\setbeamercolor*{block title example}{fg=exampleBlockTitleTextColor,bg=exampleTitleBlockColor}
+\setbeamercolor*{block body example}{fg=exampleBlockTextColor,bg=exampleBlockColor}
+\setbeamerfont{block title}{size={}}
+\setbeamercolor{titlelike}{fg=titleTextColor,bg=titleColor}
+\setbeamercolor*{normal text}{fg=normalTextColor,bg=bodyColor}
+\setbeamercolor*{example text}{fg=exampleTextColor}
+\setbeamercolor*{alerted text}{fg=alertTextColor}
+\useinnertheme[shadow=true]{rounded}
+\setbeamercolor{item projected}{bg=chipColor,fg=chipTextColor}
+\pgfdeclarehorizontalshading[frametitle.bg,frametitle right.bg]{beamer@frametitleshade}{\paperheight}{%
+color(0pt)=(frametitle.bg);
+color(\paperwidth)=(frametitle right.bg)}
+\AtBeginDocument{
+\pgfdeclareverticalshading{beamer@topshade}{\paperwidth}{%
+color(0pt)=(bg);
+color(4pt)=(black!50!bg)}
+}
+\defbeamertemplate*{frametitle}{shadow theme}
+{%
+\nointerlineskip%
+\vskip0pt%
+\hbox{\leavevmode
+\advance\beamer@leftmargin by -12bp%
+\advance\beamer@rightmargin by -12bp%
+\beamer@tempdim=\textwidth%
+\advance\beamer@tempdim by \beamer@leftmargin%
+\advance\beamer@tempdim by \beamer@rightmargin%
+\hskip-\Gm@lmargin\hbox{%
+\setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
+\vbox{}\vskip-.75ex%
+\leftskip0.3cm%
+\rightskip0.3cm plus1fil\leavevmode
+\insertframetitle%
+\ifx\insertframesubtitle\@empty%
+\strut\par%
+\else
+\par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\strut\par}%
+\fi%
+\nointerlineskip
+\vbox{}%
+\end{minipage}}%
+\beamer@tempdim=\ht\beamer@tempbox%
+\advance\beamer@tempdim by 2pt%
+\begin{pgfpicture}{0pt}{0pt}{\paperwidth}{\beamer@tempdim}
+\usebeamercolor{frametitle right}
+\pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{\beamer@tempdim}}
+\pgfusepath{clip}
+\pgftext[left,base]{\pgfuseshading{beamer@frametitleshade}}
+\end{pgfpicture}
+\hskip-\paperwidth%
+\box\beamer@tempbox%
+}%
+\hskip-\Gm@rmargin%
+}%
+\nointerlineskip
+\vskip-0.2pt
+\hbox to\textwidth{\hskip-\Gm@lmargin\pgfuseshading{beamer@topshade}\hskip-\Gm@rmargin}
+\vskip0pt
+}
+\beamer@compresstrue
+\defbeamertemplate*{headline}{smoothbars theme}
+{%
+\begin{beamercolorbox}[ht=2.125ex,dp=3.150ex]{section in head/foot}
+\insertnavigation{\paperwidth}
+\end{beamercolorbox}%
+\begin{beamercolorbox}[ht=2.125ex,dp=1.125ex,%
+leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
+\usebeamerfont{subsection in head/foot}\insertsubsectionhead
+\end{beamercolorbox}%
+}
+\mode
+<all>
+
+
+
+\title[NuQleosim]
+{
+  NuQleoSim
+}
+
+\subtitle
+{}
+   
+\author[Laetitia Bourgeade Hadrien Mary Florence Maurier Jean-Paul Navailles]
+{Laetitia Bourgeade \\ Hadrien Mary \\ Florence Maurier \\ Jean-Paul Navailles}
+
+\institute[Universités Bordeaux 1 \& 2]
+{
+  Universités Bordeaux 1 \& 2
+}
+
+\date{Jeudi 17 Février 2011} % (optionnel, abbréviation du nom de la conférence)
+
+% Effacer cela si vous ne voulez pas que la table des matières
+% apparaisse au début de chaque section
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Rappel du plan}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+%\setbeamertemplate{itemize item}[ball]
+
+%\setbeamertemplate{footline}[page number]
+%\setbeamertemplate{navigation symbols}{}
+
+\mode
+<all>

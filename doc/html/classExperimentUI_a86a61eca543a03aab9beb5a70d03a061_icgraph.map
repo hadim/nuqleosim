@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classExperimentUI.html#a4a846ed978c7506a6a472fd4ebb11eca" title="ExperimentUI::on_authorEdit_editingFinished" alt="" coords="240,5,523,35"/>
+<area shape="rect" href="$classExperimentUI.html#a96aeea003fc86f37968c900d161fad37" title="ExperimentUI::on_commentsEdit_textChanged" alt="" coords="235,59,528,88"/>
+<area shape="rect" href="$classExperimentUI.html#a16066390cab4fae5dd23d99ec0757cfb" title="ExperimentUI::on_dateEdit_dateChanged" alt="" coords="252,112,511,141"/>
+<area shape="rect" href="$classExperimentUI.html#abed67b580e5569949a55f1c417ee5586" title="ExperimentUI::on_nameEdit_editingFinished" alt="" coords="243,165,520,195"/>
+</map>

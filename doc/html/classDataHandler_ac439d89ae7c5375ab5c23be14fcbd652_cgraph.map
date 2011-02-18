@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html#ac99141fd759006e8bca4392a0f07e190" title="XmlAccess::modifExperiment" alt="" coords="228,32,420,61"/>
+<area shape="rect" href="$classXmlAccess.html#a77746ee01e7f2fb4b0be4f9d44ba04ac" title="XmlAccess::save" alt="" coords="263,85,385,115"/>
+<area shape="rect" href="$classXmlAccess.html#a23d02d312f13666f58ebd7a9b84185c4" title="XmlAccess::addExperiment" alt="" coords="481,5,663,35"/>
+<area shape="rect" href="$classXmlAccess.html#aee0c1d13b7c0dc9f2b52918e9453602e" title="XmlAccess::removeExperiment" alt="" coords="471,59,673,88"/>
+<area shape="rect" href="$classExperiment.html#ae2fc82710ab49ff6e098388521db22bb" title="Experiment::getImages" alt="" coords="724,5,879,35"/>
+</map>

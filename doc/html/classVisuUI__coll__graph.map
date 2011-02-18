@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$structVisuCaption.html" title="{VisuCaption\n|+ proteins\l+ nproteins\l+ rnas\l+ nrnas\l+ fc_dims\l+ dfc_dims\l|}" alt="" coords="84,632,175,813"/>
+<area shape="rect" href="$structProtCaption.html" title="{ProtCaption\n|+ name\l+ color\l|}" alt="" coords="5,216,93,323"/>
+<area shape="rect" href="$structColor.html" title="{Color\n|+ r\l+ g\l+ b\l|}" alt="" coords="136,5,187,131"/>
+<area shape="rect" href="$structRnaCaption.html" title="{RnaCaption\n|+ name\l+ color\l|}" alt="" coords="117,216,205,323"/>
+<area shape="rect" href="$structUnitFrame.html" title="{UnitFrame\n|+ compartment\l+ flag\l+ color\l+ pos\l|}" alt="" coords="229,197,339,341"/>
+<area shape="rect" href="$classViewer.html" title="{Viewer\n|&#45; fr\l&#45; sizeX\l&#45; sizeY\l&#45; sizeZ\l&#45; molv\l|+ Viewer()\l# draw()\l# init()\l# animate()\l# helpString()\l&#45; changeMolSize()\l&#45; showFCBox()\l&#45; showDFCBox()\l&#45; showGCBox()\l&#45; showFCBorder()\l&#45; showDFCBorder()\l&#45; showGCBorder()\l&#45; changeTransp()\l}" alt="" coords="179,1104,309,1491"/>
+<area shape="rect" href="$classMolVisu.html" title="{MolVisu\n|# fr\l# sizeX\l# sizeY\l# sizeZ\l# showFC\l# showDFC\l# showGC\l# showFCBorder\l# showDFCBorder\l# showGCBorder\l# fc_col\l# dfc_col\l# gc_col\l# fc_dims\l# dfc_dims\l# gc_dims\l# transparency\l# molSize\l|+ MolVisu()\l+ draw()\l+ animate()\l+ changeMolSize()\l+ setShowFC()\l+ setShowDFC()\l+ setShowGC()\l+ setShowFCBorder()\l+ setShowDFCBorder()\l+ setShowGCBorder()\l+ setTransp()\l# drawSphere()\l# drawBorder()\l}" alt="" coords="265,408,420,1037"/>
+<area shape="rect" href="$structPosition.html" title="{Position\n|+ x\l+ y\l+ z\l|}" alt="" coords="251,5,317,131"/>
+</map>

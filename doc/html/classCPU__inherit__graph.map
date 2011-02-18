@@ -1,0 +1,3 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCompute.html" title="{Compute\n|# environment\l# length\l# height\l# width\l# nbColonies\l# colonies\l# nbColoniesRna\l# coloniesRna\l# results\l|+ init()\l+ step()\l+ get_results()\l+ getEnv()\l# run()\l}" alt="" coords="33,5,153,317"/>
+</map>

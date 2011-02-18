@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCPU.html#a5eb48649b8457f40769343f484dc2b2b" title="CPU::initCompartments" alt="" coords="151,5,308,35"/>
+<area shape="rect" href="$classCPU.html#a339e1ba98af15feba333bbae3032bf32" title="CPU::protein_cycle" alt="" coords="163,59,296,88"/>
+<area shape="rect" href="$classCPU.html#a048719f09d2ec52a5f82da155e2c847e" title="CPU::rna_cycle" alt="" coords="173,112,285,141"/>
+<area shape="rect" href="$classCPU.html#a869d71111f52e8aaba1ea0afc347d569" title="CPU::init" alt="" coords="363,5,435,35"/>
+<area shape="rect" href="$classSimuHandler.html#afc82e979f8fd5b95fa016e5940bb066d" title="SimuHandler::launchSimu" alt="" coords="489,5,660,35"/>
+<area shape="rect" href="$classSimuUI.html#a7fe7f5d86adfb15039dede5d151496ba" title="SimuUI::on_launchButton_clicked" alt="" coords="711,5,927,35"/>
+<area shape="rect" href="$classCPU.html#a7421289f83a75f533000471fece5f9ad" title="CPU::step" alt="" coords="359,85,439,115"/>
+<area shape="rect" href="$classCPU.html#af094c00d10cbb8e4aaed0e0abf90ccaa" title="CPU::run" alt="" coords="537,85,612,115"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#aeefd277af2e605eda9650d50533cb7b1" title="DataHandler::molRemove" alt="" coords="265,5,433,35"/>
+<area shape="rect" href="$classDataHandler.html#a5cc275631763290bcd424760ce7e4f05" title="DataHandler::getMolWidget" alt="" coords="484,5,663,35"/>
+<area shape="rect" href="$classDataUI.html#a31478203a5350ef31c16e08c2fe49ffa" title="DataUI::on_listMolWidget_clicked" alt="" coords="712,5,928,35"/>
+</map>

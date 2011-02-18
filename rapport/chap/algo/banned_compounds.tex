@@ -1,0 +1,28 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{List}{listOfBanned}
+  \SetKwData{Reg}{regexp}
+  \SetKwData{ListSpe}{listOfSpecies}
+  \SetKwFunction{Match}{match}
+  \SetKwFunction{Add}{add}
+  \SetKwInOut{Output}{output}
+  
+  \Output{List of banned compounds}
+  \BlankLine
+  
+  $\Reg \longleftarrow ".*N*A[TD][HP].*"$\;
+  \For{$sp \in \ListSpe$}{
+    \If{$ \Reg.\Match(sp)  $}
+    {
+      $\List.\Add(sp)$\;
+    }
+  }
+
+  \caption{Détection des métabolites bannis}
+  \label{banned_algo}
+\end{algorithm}\DecMargin{1em}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../main"
+%%% End: 

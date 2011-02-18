@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCPU.html#a869d71111f52e8aaba1ea0afc347d569" title="CPU::init" alt="" coords="236,5,308,35"/>
+<area shape="rect" href="$classSimuHandler.html#afc82e979f8fd5b95fa016e5940bb066d" title="SimuHandler::launchSimu" alt="" coords="359,5,529,35"/>
+<area shape="rect" href="$classSimuUI.html#a7fe7f5d86adfb15039dede5d151496ba" title="SimuUI::on_launchButton_clicked" alt="" coords="580,5,796,35"/>
+</map>

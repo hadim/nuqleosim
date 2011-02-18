@@ -1,0 +1,16 @@
+Le binaire compilé en 32bits devrait marcher nativement sur des machines 64bits. Le binaire a été testé sous Ubuntu et Debian.
+
+Attention !
+
+Les librairies pour libQGLViewer et Qwt sont fournises avec les éxecutables. Cependant, NuQleoSim requiert des librairies Qt suivantes pour pouvoir s'executer :
+
+- libQtCore.so.4
+- libQtOpenGL.so.4 
+- libQtGui.so.4
+- libQtXml.so.4
+- libQtXmlPatterns.so.4 
+- libQtNetwork.so.4 
+
+Pour lancer NuQleoSim, il faut executer NuQleoSim-1.0-32bits-Linux.sh
+
+Pb: si la base de donnée d'exemple n'est pas trouvé à l'execution, il faut supprimer l'ancienne configuration : rm -fr ~/.config/NuQleoSim_Team/

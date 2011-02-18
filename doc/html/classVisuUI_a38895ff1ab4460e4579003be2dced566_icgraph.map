@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classVisuUI.html#a128b0efd8beb008dd5e475497eb58788" title="VisuUI::closeWindow" alt="" coords="179,32,323,61"/>
+<area shape="rect" href="$classVisuUI.html#ac9c4015290f3c8b5f8158ca325b17a42" title="VisuUI::closeEvent" alt="" coords="409,5,540,35"/>
+<area shape="rect" href="$classVisuUI.html#a3344c57a94528cafd5fe55bf20b620b3" title="VisuUI::on_closeButton_clicked" alt="" coords="372,59,577,88"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classExperiment.html" title="{Experiment\n|&#45; images\l|+ Experiment()\l+ ~Experiment()\l+ getImages()\l+ setImages()\l}" alt="" coords="5,160,120,304"/>
+<area shape="rect" href="$classImage.html" title="{Image\n||+ Image()\l+ ~Image()\l}" alt="" coords="144,179,229,285"/>
+<area shape="rect" href="$classMolecule.html" title="{Molecule\n||+ Molecule()\l+ ~Molecule()\l}" alt="" coords="253,179,355,285"/>
+</map>

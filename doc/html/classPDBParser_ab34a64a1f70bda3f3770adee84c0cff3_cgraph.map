@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classBioParser.html#a0f408be5942fc9974169a78beb5f5047" title="BioParser::appendMap" alt="" coords="200,5,352,35"/>
+<area shape="rect" href="$classBioParser.html#a74fded5403c8b1171f709b578568afa9" title="BioParser::cleanString" alt="" coords="201,59,351,88"/>
+<area shape="rect" href="$classPDBParser.html#a70a02bf2942c32eb0f4c38e4c776d78f" title="PDBParser::getPDBid" alt="" coords="203,112,349,141"/>
+<area shape="rect" href="$classBioParser.html#aef046221736034deedfb23a456a4f4b0" title="BioParser::initKeys" alt="" coords="211,165,341,195"/>
+</map>

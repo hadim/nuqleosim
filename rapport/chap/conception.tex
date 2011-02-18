@@ -1,0 +1,146 @@
+\chapter{Conception}
+
+Dans ce chapitre, le fonctionnement de l'application sera décrit de
+manière détaillée, tout d'abord pour la partie base de données, puis
+pour la modélisation et enfin pour l'interface.
+
+\section{Base de données}
+
+La base de données doit contenir deux types très différents de
+données. Des expériences, principalement des photos de microscopie,
+ainsi que des molécules. La base de données a donc été conçue de manière
+à séparer ces deux types de données.
+
+L'élément \texttt{Molecule} contient les données relatives aux
+molécules. Afin d'assurer une interopérabilité des informations, les
+identifiants de trois grandes bases de données biologiques ont été
+inclus (Protein Data Bank (PDB), EMBL et UniprotKB). D'autres liens vers des bases de données peuvent être ajoutés dans le cas d'une poursuite du
+développement de \NQ.
+
+L'élément \texttt{Experiment} contient, lui, les données relatives à des
+expériences. Les données sont principalement une liste d'images ainsi
+que des données courantes telles que l'auteur et la date. 
+
+Un champ supplémentaire, \texttt{comments} est présent pour chacune des deux classes d'éléments et permet à l'utilisateur de \NQ de laisser des informations complémentaires de différents types.
+
+Afin de répondre à toutes ces caractéristiques, la base de données de
+\NQ est organisée selon le schéma qui suit :
+
+\image{diagDB}{Schéma de la base de données.}{0.5}
+
+\section{Modélisation du nucléole}
+
+\subsection{Modélisation des composants du nucléole}
+
+Le nucléole est une structure du noyau des cellules eucaryotes, mais
+ce n'est pas un compartiment. En effet, aucune paroi ne le délimite,
+seule sa composition permet de l'identifier. Comme il a été vu
+précédemment, il est le centre de la production intense des
+ribosomes. Sa densité est donc supérieure à celle du reste du noyau et
+son apparence en microscopie est, par conséquent, elle aussi
+différente (\cite{Raska2006} et \cite{Thiry2005}).
+
+La localisation dans le noyau du nucléole n'ayant aucun impact
+important pour la réalisation de ce projet, la modélisation du
+nucléole commence donc par la modélisation de ce composant
+lui-même. En outre, il a été observé que le nucléole lui-même comptait
+plusieurs composants bien distincts. Il comprend le DFC (\textit{Dense
+  Fibrillar Component}), le FC (\textit{Fibrillar Component}) et GC
+(\textit{Granular Center}). Cependant ce sont des composants et non
+des compartiments, c'est donc leur composition qui les caractérise et
+non la présence d'une membrane délimitant les divers compartiments. Le
+nucléole modélisé doit prendre en compte cette spécificité. Il doit
+donc comprendre trois zones distinctes représentant respectivement les
+trois composants.
+
+Comme cela vient d'être vu, chaque composant du nucléole se distingue
+de par sa composition en protéines et en ARN. Cette caractéristique
+doit donc, elle aussi, être prise en compte. C'est-à-dire qu'il doit
+être possible de préciser, pour chaque molécule ayant un rôle dans la
+simulation, les composants dans lesquels elle se déplace. Enfin, c'est
+au coeur du nucléole que se déroule la transcription des ARN
+ribosomiaux. Il y a donc synthèse puis maturation de ces ARN dans les
+différents composants du nucléole. Ceci constitue le dernier point à
+modéliser pour mettre en place une simulation. En effet, les ARN sont
+transcrits au niveau du FC. Puis, ils subissent plusieurs maturations
+en traversant le DFC puis le GC, pour sortir du nucléole et du noyau et
+être assemblés en ribosomes. La modélisation du nucléole doit donc
+également prendre en compte cette autre caractéristique.
+
+En résumé, la modélisation du nucléole doit prendre en compte les
+caractéristiques de l'environnement \og{}nucléole\fg{} :
+
+\begin{itemize}
+	\item zone délimitant la composante FC
+	\item zone délimitant la composante DFC
+	\item zone délimitant la composante GC
+	\item position des molécules dans l'environnement : deux molécules
+      ne peuvent pas se superposer.
+\end{itemize}
+
+Cette modélisation doit également prendre en compte les molécules
+intervenant dans la simulation :
+
+\begin{itemize}
+\item protéine: sa position, sa vitesse de déplacement, les
+  composantes dans lesquelles elle prend part.
+\item ARN : sa position, sa vitesse de déplacement, les composantes
+  dans lesquelles elle prend part et son état de maturation, sa
+  vitesse de maturation.
+\item \og{}transcriptor\fg{} : sa position dans le FC, sa vitesse de
+  déplacement, sa vitesse de \og{}transcription\fg{}.
+\end{itemize}
+
+\subsection{Approche par système multi-agents}
+
+Un système multi-agents (SMA) est un système composé d'un ensemble
+d'agents, situés dans un certain environnement et interagissant selon
+certaines relations. Un agent est une entité caractérisée par le fait
+qu'elle est, au moins partiellement, autonome.
+
+Cette approche est de plus en plus utilisée pour modéliser des
+systèmes complexes. L'avantage principal de ce type de modélisation
+est sa simplicité de mise en place pour le modélisateur. Il suffit de
+décrire le comportement de chaque agent en fonction de son
+environnement. Ce sont souvent des rôles simples et issus de
+l'observation (dans le cas des modélisations en biologie). Cependant
+ce type d'approche autorise une certaine complexification aussi bien
+du comportement des agents que des interactions entre agents et avec
+leur environnement.
+
+Ainsi en décrivant le nucléole ainsi que le comportement des molécules
+qu'il contient, il est possible d'appliquer une approche multi-agents
+(Annexe \ref{diagSMA}).
+
+\section{Prototypage de l'interface}
+
+\NQ a deux rôles principaux. Le premier est de permettre la
+communication avec la base de données. Le second, ayant trait à la
+simulation, est lui-même subdivisé en deux : la simulation en
+elle-même ainsi que l'affichage des résultats de la simulation.
+
+L'interface est donc divisée en fonction de ces trois fonctions
+principales : 
+
+\begin{itemize}
+\item Le premier onglet (Fig. \ref{img_mock1}) est l'interface de communication avec la base de données : l'utilisateur peut y ajouter, modifier ou supprimer des données dans la base.
+\item Le second onglet (Fig. \ref{img_mock2}) permet le paramétrage de
+  la simulation et son démarrage.
+\item Le troisième onglet (Fig. \ref{img_mock3}) ne s'active qu'en
+  présence de résultats. Dans ce cas, il permet la génération des
+  résultats sous différentes formes (graphique et tableau).
+\end{itemize}
+
+La visualisation de la simulation est une tâche lourde qui pourrait,
+par la suite, demander à être désactivée à la demande. Lors du
+démarrage de la simulation, la visualisation se fait donc dans une
+fenêtre séparée de la fenêtre principale.
+
+\image{mock1}{Premier onglet : interface avec la base de donnée.}{1}
+\image{mock2}{Second onglet : paramétrage et lancement de la simulation.}{1}
+\image{mock3}{Troisième onglet : génération et mise en forme des résultats.}{1}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End: 

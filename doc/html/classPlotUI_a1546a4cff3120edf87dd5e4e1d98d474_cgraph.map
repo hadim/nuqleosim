@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classPlotUI.html#aab7c601ebe2c13d7b28259722ccb3ac1" title="PlotUI::drawGraph" alt="" coords="164,5,292,35"/>
+<area shape="rect" href="$classPlotUI.html#a005c414d4ddeeadbce3355568fa7548f" title="PlotUI::generateTable" alt="" coords="155,59,301,88"/>
+<area shape="rect" href="$classPlotUI.html#ab008587e94f42b71320c9f934689e2f3" title="PlotUI::getTableWidget" alt="" coords="349,59,504,88"/>
+</map>

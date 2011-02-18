@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$structUnitFrame.html" title="{UnitFrame\n|+ compartment\l+ flag\l+ color\l+ pos\l|}" alt="" coords="28,197,137,341"/>
+<area shape="rect" href="$structPosition.html" title="{Position\n|+ x\l+ y\l+ z\l|}" alt="" coords="8,5,75,131"/>
+<area shape="rect" href="$structColor.html" title="{Color\n|+ r\l+ g\l+ b\l|}" alt="" coords="99,5,149,131"/>
+</map>

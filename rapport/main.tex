@@ -1,0 +1,62 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage{report_perso}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Informations relatives au projet en cours %%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{NuQleosim}  % Titre
+\date{2010 - 2011}  % Date (\today pour aujourd'hui)
+\location{Universités Bordeaux 1 et 2}
+\author{Laetitia Bourgeade \\ Hadrien Mary \\ Florence Maurier \\ Jean-Paul Navailles}
+\blurb{Master Biologie Santé\\Mention Bioinformatique}
+
+\graphicspath{img/} %% C\label{\begin{tiny}\end{tiny}} chemin vers les images du projets
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Contenu du document %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle  %% Création de la page de guarde
+\newpage\input{chap/abstract}
+\thispagestyle{empty}
+\tableofcontents  %% Création d'une table des matière
+\thispagestyle{empty}
+\newpage\pagenumbering{arabic}
+\thispagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Insertion du corps du texte %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chap/introduction}
+\input{chap/analyse}
+\input{chap/conception}
+\input{chap/realisation}
+\input{chap/resultats}
+\input{chap/conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Gestion et insertion des annexes %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\appendixpage
+\addappheadtotoc
+\renewcommand{\thesection}{\Alph{section}.}
+\input{chap/annexes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Gestion et insertion de la bibliographie %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain} % Style bibli: ieee, plain
+\bibliography{bibli/biblio} %% fichier.bib
+\nocite{*}
+\label{sec:bibli}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

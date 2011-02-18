@@ -1,0 +1,131 @@
+\chapter{Cas d'utilisation}
+
+Une fois \NQ lancé l'utilisateur peut utiliser l'application de deux
+manières. Il peut soit consulter ou modifier la base de données
+moléculaire et expérimentale de \NQ, soit paramétrer une simulation et
+la démarrer.
+
+\section{Communication avec la base de données}
+
+Lorsque l'utilisateur est sur l'onglet \texttt{Nucleolus Database}, il
+a accès à l'ensemble de la base de données de \NQ. Sur la gauche de
+l'interface, se trouve une colonne répertoriant l'ensemble des
+molécules et expériences (respectivement dans deux listes différentes)
+de la base de données. En cliquant sur une molécule (respectivement
+une expérience), s'affichent sur la partie de gauche de l'interface,
+les informations la concernant (Fig. \ref{img_BDMolecule}). Excepté le
+champ identifiant de la molécule (respectivement de l'expérience),
+tous les autres sont accessibles et modifiables à tout instant. En ce
+qui concerne l'ajout ou le retrait de molécules (respectivement
+expériences) de la base de données, il suffit de cliquer sur les
+boutons correspondants : en dessous de la liste en question, pour
+ajouter un élément et en bas à droite de l'interface, pour supprimer
+l'élément sélectionné à cet instant. Lors de l'ajout d'une molécule
+(respectivement une expérience) dans la base de données, l'identifiant
+dans cette base est attribué automatiquement, le reste des champs est
+vide et doit être renseigné par l'utilisateur. En particulier, il peut
+entrer l'identifiant de la molécule dans les bases de données
+proposées (PDB, UniProtkb et EMBL). Un simple clic sur le bouton à
+droite du champ rempli permet d'ouvrir un lien, dans le navigateur
+internet, vers la fiche de la molécule dans la base de données
+considérée. A la suppression d'une molécule (ou expérience), un
+message d'alerte apparaît pour prévenir l'utilisateur que toute
+suppression de la base de données est définitive.
+
+\section{Paramétrage et lancement d'une simulation}
+
+L'onglet \texttt{Simulation} permet à l'utilisateur de paramétrer une
+simulation sur le nucléole d'une cellule. Ce paramétrage ce fait en
+deux temps. Dans un premier temps, il faut régler les paramètres
+portant sur l'environnement de la simulation, soit le nucléole. De
+gauche à droite dans la partie supérieure de l'interface,
+l'utilisateur peut préciser les trois dimensions de son nucléole, puis
+la durée d'une simulation (en nombre d'itérations ou de déplacements)
+et enfin le nombre de mesures qu'il veut faire au cours du temps de
+simulation. Dans la partie basse de \NQ l'utilisateur peut
+sélectionner dans la liste des molécules de la base de données qui lui
+sont proposées, celles qu'il veut intégrer à sa simulation. Un simple
+clic sur la molécule dans la liste permet d'afficher les paramètres à
+configurer pour la simulation à gauche de la liste. Cependant, pour
+que ces modifications soient enregistrées et prises en compte dans la
+simulation la case en haut à gauche de ces paramètres doit être
+cochée. Une fois sélectionnée la molécule apparaît surlignée en rouge
+dans la liste. Une fois paramétrée à sa guise, l'utilisateur peut
+cliquer sur le bouton \texttt{Lauch} pour démarrer la simulation.
+
+A titre d'exemple, une simulation mettant en jeu deux protéines, dont
+les proportions sont précisées ci-après, va être présentée.
+
+\begin{itemize}
+	\item INSULIN : 
+	\begin{itemize}
+		\item \texttt{FC Concentration} : 0.0 ; accessible
+		\item \texttt{DFC Concentration} : 0.0 ; accessible
+		\item \texttt{GC Concentration} : 2.0 ; accessible
+		\item \texttt{Movement probability} : 1
+	\end{itemize}
+	\item : 
+	\begin{itemize}
+		\item \texttt{FC Concentration} : 0.0 ; non accessible
+		\item \texttt{DFC Concentration} : 0.0 ; non accessible
+		\item \texttt{GC Concentration} : 2.0 ; accessible
+		\item \texttt{Movement probability} : 1
+	\end{itemize}
+\end{itemize}
+
+\image{simu1}{Fenêtre de visualisation de la simulation à son commencement.}{1}
+
+\image{simuCompo}{Visualisation des composantes du nucléole}{1}
+
+Au lancement de la simulation une nouvelle fenêtre
+(Fig. \ref{img_simu1}) s'ouvre dans laquelle se déroule la simulation
+dans un environnement tridimensionnel. La zone de visualisation
+proprement dite se trouve a gauche de la fenêtre qui s'est ouverte. A
+droite se trouve la légende des couleurs de la simulation ainsi que
+divers paramètres modulables par l'utilisateur.
+
+\image{simu2}{Fenêtre de visualisation de la simulation terminée.}{1}
+
+\image{simuZoom}{Zoom sur les molécules uniquement présentes dans le DFC une fois la simulation terminée.}{1}
+
+En premier lieu, l'utilisateur peut mettre la simulation en pause, grâce au bouton situé sous la simulation, pour pouvoir ajuster les divers paramètres de visualisation accessibles. En effet, la taille des molécules ainsi que la vitesse de la réaction peuvent être changés. De plus, il est possible de faire apparaître indépendamment en transparence les trois composantes du nucléole. Cette transparence est elle même ajustable par l'utilisateur. Il est également possible de ne visualiser que les molécules d'une ou plusieurs composantes ou de zoomer sur une zone d'intérêt (Fig. \ref{img_simuZoom}).
+
+\section{Présentation organisée des résultats}
+
+\image{resu1}{L'onglet \texttt{Results} avant toute simulation.}{1}
+
+\image{resu2}{L'onglet \texttt{Results} après une simulation :
+  Paramétrage de l'analyse des résultats.}{1}
+
+Tant qu'aucun résultat issu d'une simulation n'est disponible,
+l'onglet \texttt{Results} ne permet aucune action et affiche un
+message à l'utilisateur (Fig. \ref{img_resu1}). Lorsque la simulation
+est terminée (Fig. \ref{img_simu2}), le contenu de l'onglet
+\texttt{Results} est alors accessible
+(Fig. \ref{img_resu2}). L'utilisateur peut alors analyser les
+résultats de la simulation en les présentant sous forme de graphes ou
+de tableaux. Dans le cas d'un graphe, il peut le nommer puis
+sélectionner les molécules d'ARN qu'il veut analyser. Il en va de même
+pour le tableau. Pour générer le graphe (respectivement le tableau),
+l'utilisateur n'a qu'à appuyer sur le bouton \texttt{Generate} à
+droite. Dans la partie basse jusqu'alors inutilisée apparaît un onglet
+présentant le graphe généré (Fig. \ref{img_resu3}). Concernant la
+génération du tableau l'opération est la
+même(Fig. \ref{img_resu4}). L'utilisateur peut générer autant de
+graphe ou tableau qu'il le désire, ils s'insèreront dans de nouveaux
+onglets à coté du précédent (Fig. \ref{img_resu4}).
+
+Pour terminer, si l'utilisateur veut conserver les résultats sous
+forme de graphes ou tableaux, ils peuvent être exportés au format CSV
+ou PNG (uniquement pour les graphes).
+
+\image{resu3}{Génération d'un graphe à partir des résultats de la
+  simulation.}{1}
+
+\image{resu4}{Génération d'un tableau à partir des résultats de la
+  simulation.}{1}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:

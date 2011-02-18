@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCPU.html#a339e1ba98af15feba333bbae3032bf32" title="CPU::protein_cycle" alt="" coords="195,5,328,35"/>
+<area shape="rect" href="$classCPU.html#a048719f09d2ec52a5f82da155e2c847e" title="CPU::rna_cycle" alt="" coords="205,59,317,88"/>
+<area shape="rect" href="$classCPU.html#add368d67e72655252f776b359474eda3" title="CPU::transcriptor_cycle" alt="" coords="181,112,341,141"/>
+<area shape="rect" href="$classCPU.html#a7421289f83a75f533000471fece5f9ad" title="CPU::step" alt="" coords="391,59,471,88"/>
+<area shape="rect" href="$classCPU.html#af094c00d10cbb8e4aaed0e0abf90ccaa" title="CPU::run" alt="" coords="520,59,595,88"/>
+</map>

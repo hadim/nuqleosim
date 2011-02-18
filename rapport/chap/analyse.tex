@@ -1,0 +1,209 @@
+\chapter{Analyse}
+
+\section{Contexte}
+
+\subsubsection{Généralités sur le nucléole}
+
+Domaine nucléaire dynamique, le nucléole est le centre de synthèse des
+ribosomes, à l'origine de la synthèse des protéines. Son état reflète
+le niveau d'activité de la cellule. En effet, suivant la phase du
+cycle cellulaire dans laquelle la cellule se trouve, le nucléole est
+plus ou moins actif. Il peut même venir à disparaître totalement lors
+de la mitose.
+
+\subsubsection{Biogenèse des ribosomes}
+
+Un ribosome comprend deux sous-unités, une petite et une grande. Ces
+sous-unités sont des macro-molécules constituées d'ARN et de
+protéines.
+
+L'ADN présent dans le nucléole correspond aux gènes codant pour cet
+ARN ribosomique ou ARNr (voir la figure \ref{img_biogenese.png}). Il y
+est transcrit en pré-ARNr par l'ARN polymérase I. Le pré-ARNr est
+ensuite scindé en 3 ARNr durant sa maturation.
+
+Parallèlement, les gènes des protéines ribosomiques sont transcrits en
+ARN messagers par l'ARN polymérase II dans le noyau. Cet ARNm est
+alors exporté vers le cytoplasme où il sera traduit en protéines.  Les
+protéines ribosomiques ainsi produites sont alors importées vers le
+nucléole où elles seront associées aux ARNr pour former les
+sous-unités ribosomiques.
+
+Ces dernières sont enfin exportées vers le cytoplasme où elles
+pourront remplir leur fonction.
+
+\image{biogenese.png}{Biogenèse des ribosomes}{0.7}
+
+\subsubsection{Morphologie du nucléole}
+Le nucléole ne possède pas de membrane.  Cependant, chez les
+eucaryotes supérieurs, il est généralement composé de trois régions
+morphologiquement distinctes et visualisables en microscopie
+électronique (Fig. \ref{img_microNuc}) :
+\begin{itemize}
+	\item un ou plusieurs centre(s) fibrillaire(s),
+	\item un centre fibrillaire dense (ou composant fibrillaire dense) autour du premier centre fibrillaire, 
+	\item et une région granulaire (ou composant granulaire) en périphérie. 
+\end{itemize}
+Selon les organismes, les proportions des volumes de ces trois compartiments peut varier.
+Les séparations entre ces domaines ne sont pas nettes. 
+Chez les plantes, des cavités (ou vacuoles) sont retrouvées en plus de ces territoires. 
+
+\paragraph{Le centre fibrillaire :} il ne représente que 1 à 2 \% du volume total du nucléole. 
+Il contient de l'ARN polymérase I et des facteurs de liaison amont (ou UBF pour Upstream Binding Factor, en anglais). 
+
+\paragraph{Le centre fibrillaire dense :} il représente environ 17 \% de la fraction nucléolaire. 
+Son volume reflète à peu près l'engagement nucléolaire dans la biogenèse des ribosomes. 
+
+\paragraph{La région granulaire :} elle occupe environ 75 \% du volume total du nucléole. 
+La granulosité de cette région périphérique est due à la présence de particules ribonucléoprotéiques. 
+
+\image{microNuc}{Structure du nucléole.}{0.7}
+
+\subsubsection{Maladies génétiques liées au nucléole}
+
+Des mutations au niveau de gènes codant pour des protéines
+nucléolaires sont associées à des maladies humaines. La variété des
+maladies associées telles que le syndrome de Werner, le syndrome de
+Treacher Collins ou encore la dyskératose congénitale, indique
+l'importance fondamentale du rôle du nucléole. La compréhension de sa
+dynamique ainsi que de sa structure est un premier pas vers le
+développement de nouvelles thérapies.
+
+\subsubsection{Les outils d'étude du nucléole}
+
+Le biologiste qui étudiait le nucléole avait pour habitude de
+répertorier l'ensemble des molécules étudiées dans un fichier de type
+tableur (Excel ou OpenOffice Cacl). Par ailleurs, il n'existe pas
+encore de simulation \cit{in silico} spécifique au nucléole.
+
+\NQ a donc pour objectif d'assister le biologiste dans son travail, en
+lui offrant une alternative à sa méthode de stockage de
+l'information, ainsi qu'un outil lui permettant de réaliser des
+simulations afin de mieux préparer les expériences en laboratoire.
+
+
+\section{Besoins fonctionnels}
+
+\subsubsection{Stockage de données liées au nucléole}
+Les données qualitatives et quantitatives ainsi que les images de
+microscopie électronique récupérées sur les objets biologiques du
+nucléole doivent être conservées dans une base de données organisée et
+accessible. Les objets biologiques concernés sont les principaux
+constituants du nucléole soit des protéines, de l'ADN, des ARN, des
+ribosomes et l'ensemble des réactions qui se déroulent dans cette
+ultra-structure. Ces données devront être standardisées afin d'être
+aisément exportables dans d'autres bases de données.
+
+Il doit être possible de saisir, de visualiser et de modifier les
+données contenues dans cette base. Les objets biologiques du nucléole
+doivent être décrits de manière organisée afin de faciliter la
+recherche et l'accès de ces objets. Un lien vers des bases de données
+comme \href{http://expasy.org/sprot}{SwissProt} ou
+\href{http://www.pdb.org/}{Protein Data Bank} par exemple pourra être
+mis en place. Les images de microscopie électronique recueillies sur
+le nucléole devront être regroupées et gérées par cette banque de
+données.
+
+Pour conserver les données accumulées et pouvoir les mettre à jour ou
+simplement les consulter, la banque de données doit être sauvegardée à
+chaque modification ou fermeture de l'application. Elle doit également
+être chargée à chaque lancement de l'application.
+
+\subsubsection{Simulation du nucléole}
+Dans un second temps l'application doit gérer une simulation sur le
+nucléole. Pour cela la saisie des paramètres doit être
+intuitive. L'utilisateur doit également pouvoir utiliser commodément
+les données contenues dans la banque de données décrite ci-avant. Une
+fois la simulation initiée celle-ci doit être visualisable en temps
+réel par l'utilisateur sans pour autant nuire à l'utilisation du reste
+de l'application. L'utilisateur doit également gérer la simulation
+lancée grâce à des fonctions de \cit{pause}, \cit{lecture} et
+\cit{stop}. Une fois la simulation terminée les résultats s'affichent
+pour permettre une analyse. Les résultats doivent pouvoir être traités
+sous forme de tableaux ou de graphes personnalisables que
+l'utilisateur peut régénérer à tout instant. Les résultats doivent
+également pouvoir être exportés.
+
+\section{Besoins non fonctionnels}
+Ce projet devra également répondre à un certain nombre de besoins non
+fonctionnels permettant une utilisation intuitive. En particulier
+l'application doit être ergonomique et intuitive pour l'utilisateur.
+
+\subsubsection{Portabilité}
+
+Afin de faciliter la diffusion de \NQ, il devra pouvoir fonctionner
+dans un maximum d'environnements d'exécution. Pour cela, il faudra
+utiliser pour créer cette application un langage et des bibliothèques
+disponibles pour GNU/Linux, Windows et MacOSX. Enfin, pour que la
+simulation puisse être affichée en temps réel et en 3D dans tous ces
+environnements, un outil de visualisation 3D multi-plateforme sera
+nécessaire.
+
+\subsubsection{Robustesse}
+
+L'utilisateur de \NQ sera amené à saisir des données à deux
+niveaux.  Le premier correspond à l'interface de saisie des
+informations de la base de données : il faudra contrôler le format
+des fichiers importés, ainsi que la nature des informations données
+pour certains champs (liens, concentrations etc.).
+
+Le second porte sur le paramétrage de la simulation et de son analyse.
+Pour limiter les erreurs de saisie, la sélection de leurs paramètres
+se fera à l'aide de listes déroulantes contenant des données présentes
+dans la base.
+
+Dans le cas oû l'application rencontrerait un problème, lors du
+chargement d'un fichier ou lors de la simulation par exemple,
+l'utilisateur devra en être averti par un message lui indiquant le
+type d'erreur.
+
+\subsubsection{Modularité et extensibilité}
+
+L'application comprend deux parties : stockage de données et
+simulation. Elle sera donc organisée en modules. Cela permettra de
+répartir le travail de développement et éventuellement de réutiliser
+ou ajouter des portions de code dans l'avenir.
+
+\subsubsection{Performances}
+
+Lorsqu'une simulation est en cours, elle ne doit pas bloquer
+l'interface qui doit demeurer fluide. Par ailleurs, il pourrait être
+intéressant d'activer l'utilisation du GPU pour la simulation si
+celui-ci est détecté. Cette opération doit cependant rester
+transparente pour l'utilisateur.
+
+\section{Etat de l'art}
+
+\subsection{Bases de données relatives au nucléole}
+
+Les bases de données spécialisées sur le nucléole sont peu
+répandues. Voici deux bases de données qui possèdent des informations sur
+les molécules du nucléole :
+
+\subparagraph{NOPdb: Nucleolar Online Proteomics Database \cite{Leung2006}: }
+\url{http://www.lamondlab.com/NOPdb3.0/}. NOPdb est une base de données du
+protéome humain du nucléole. Les données sont issues de la
+spectrométrie de masse et la base contient à ce jour plus de 50 000
+peptides correspondant à environ 4500 protéines humaines du
+nucléole. L'API semble accessible sur demande.
+
+\subparagraph{LOCATE \cite{Sprenger2007}: }
+\url{http://locate.imb.uq.edu.au/}. LOCATE est une base de données
+axée sur la localisation subcellulaires des protéines de la souris et
+de l'Homme. Les localisations ont été déterminées par
+immunofluorescence à haut débit. Les protéines du nucléole sont au
+nombre de 1380 pour la souris et 1623 pour l'Homme. La base de données
+complète regroupe environ 60 000 protéines.
+
+\subsection{Les outils de modélisation}
+
+Il n'existe pas à ce jour d'outil capable de simuler l'activité du
+nucléole en prenant en compte toute sa dynamique et ses
+caractéristiques. On pourra cependant citer une application telle que
+\href{http://ccl.northwestern.edu/netlogo/}{NetLogo} \cite{Sklar2007}
+qui est un environnement de modélisation orienté système multi-agent.
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End: 

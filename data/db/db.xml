@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nucleolus_db>
+ <experiments>
+  <experiment id="5">
+   <author>Jeep</author>
+   <comments>no comment</comments>
+   <date>2010-12-05</date>
+   <name>Experiment two</name>
+   <images>
+    <image id="6">
+     <comments>one nice comment here</comments>
+     <id/>
+     <name>babar</name>
+     <path>img/nucleolus2.jpg</path>
+    </image>
+    <image id="7">
+     <comments>one other comment</comments>
+     <id/>
+     <name>Smith</name>
+     <path>img/nucleolus3.jpg</path>
+    </image>
+   </images>
+  </experiment>
+  <experiment id="8">
+   <author>David Nuqle</author>
+   <comments>Some interesting comment about this experiment ...</comments>
+   <date>2011-01-12</date>
+   <name>Experiment one</name>
+   <images>
+    <image id="9">
+     <comments>yeahhhhhhh</comments>
+     <id/>
+     <name>Babar</name>
+     <path>img/nrmicro1597-f2.jpg</path>
+    </image>
+    <image id="10">
+     <comments>comments</comments>
+     <id/>
+     <name>Richard</name>
+     <path>img/nucleolus.jpg</path>
+    </image>
+   </images>
+  </experiment>
+ </experiments>
+ <molecules>
+  <molecule id="1">
+   <comments/>
+   <default_concentration/>
+   <embl_id/>
+   <name>Human Fibrillarin</name>
+   <pdb_id>2IPX</pdb_id>
+   <sequence>>2IPX:A|PDBID|CHAIN|SEQUENCE
+GKNVMVEPHRHEGVFICRGKEDALVTKNLVPGESVYGEKRVSISEGDDKIEYRAWNPFRSKLAAAILGGVDQIHIKPGAK
+VLYLGAASGTTVSHVSDIVGPDGLVYAVEFSHRSGRDLINLAKKRTNIIPVIEDARHPHKYRMLIAMVDVIFADVAQPDQ
+TRIVALNAHTFLRNGGHFVISIKANCIDSTASAEAVFASEVKKMQQENMKPQEQLTLEPYERDHAVVVGVYRP</sequence>
+   <sequence_length>233</sequence_length>
+   <type>molecule</type>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="2">
+   <comments>http://dx.doi.org/10.1002/psc.496</comments>
+   <default_concentration/>
+   <embl_id/>
+   <name>CEPHAIBOL A</name>
+   <pdb_id>1OB4</pdb_id>
+   <sequence>>1OB4:A|PDBID|CHAIN|SEQUENCE
+XFAAAAGLVAPQVPAPF</sequence>
+   <sequence_length>17</sequence_length>
+   <type>molecule</type>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="3">
+   <comments/>
+   <default_concentration>0</default_concentration>
+   <embl_id/>
+   <name>INSULIN</name>
+   <pdb_id>1ZNI</pdb_id>
+   <sequence>GIVEQCCTSICSLYQLENYCNFVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCTSICSLYQLENYCNFVNQHLCGSHLVEALYLVCGERGFFYTPKA</sequence>
+   <sequence_length>102</sequence_length>
+   <type>protein</type>
+   <uniprotkb_id/>
+  </molecule>
+  <molecule id="4">
+   <comments></comments>
+   <default_concentration></default_concentration>
+   <embl_id></embl_id>
+   <name>RRM_1 domain of NCL protein</name>
+   <pdb_id>2fc8</pdb_id>
+   <sequence>>2FC8:A|PDBID|CHAIN|SEQUENCE
+GSSGSSGPNARSQPSKTLFVKGLSEDTTEETLKESFDGSVRARIVTDRETGSSKGFGFVDFNSEEDAKAAKEAMEDGEID
+GNKVTLDWAKPKGEGGSGPSSG</sequence>
+   <sequence_length>102</sequence_length>
+   <type></type>
+   <uniprotkb_id></uniprotkb_id>
+  </molecule>
+ </molecules>
+</nucleolus_db>

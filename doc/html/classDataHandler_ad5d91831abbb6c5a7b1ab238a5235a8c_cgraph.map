@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#a981be0800b96408e21782d35cc1a0735" title="DataHandler::loadData" alt="" coords="227,32,379,61"/>
+<area shape="rect" href="$classXmlAccess.html#ac3ecada7fbd4afc434be0fad0abe9e7b" title="XmlAccess::getExperiments" alt="" coords="427,5,613,35"/>
+<area shape="rect" href="$classXmlAccess.html#abecc950c13179ce5b3a855a9f08a1e6f" title="XmlAccess::getMolecules" alt="" coords="435,59,605,88"/>
+<area shape="rect" href="$classExperiment.html#a7499b6f67c3739f080d024eba93c149e" title="Experiment::setImages" alt="" coords="663,5,817,35"/>
+</map>

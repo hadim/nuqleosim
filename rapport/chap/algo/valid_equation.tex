@@ -1,0 +1,96 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{ListR}{listOfReactions}
+
+  \SetKwData{operators}{Operators}
+  \SetKwData{Factors}{Factors}
+  \SetKwFunction{recup}{Recup\_elem\_equation()}
+  \SetKwFunction{species}{get\_species()}
+  \SetKwFunction{transitions}{get\_transitions()}
+  \SetKwFunction{isinteger}{is\_integer()}
+  \SetKwFunction{equalop}{has\_equal\_operator()}
+  \SetKwFunction{print}{print}
+  \SetKwData{regexp}{RegExp}
+  \SetKwData{msg}{Msg}
+  \SetKwData{eq}{Eq}
+  \SetKwData{valid}{Valid}
+  \SetKwData{isFactor}{isFactor}
+  \SetKwData{isOperator}{isOperator}
+  \SetKwData{isEquation}{isEquation}
+  
+  $\eq \longleftarrow \recup$\;
+  $\Factors \longleftarrow \species + \transitions$\;
+  $\valid \longleftarrow True$\;
+  $\isFactor, \isOperator, \isEquation \longleftarrow False$\;
+  \BlankLine
+
+  \If{$ \eq \in \emptyset $}
+  {
+    $\valid \longleftarrow False$\;
+  }
+
+  \Else
+  {
+    \For{$elem \in \eq$}
+    {
+      \If{$elem.\equalop$}
+      {
+        $\isEquation \longleftarrow True$\;
+      }
+      \If{$elem \notin (\operators\ OR\ \Factors)\ AND\ not\ elem.\isinteger$}
+      {
+        $\valid \longleftarrow False$\;
+      }
+      \If{$elem \in \operators$}
+      {
+        \If{$\isOperator$}
+        {
+          $\valid \longleftarrow False$\;
+        }
+        \Else
+        {
+          $\isOperator \longleftarrow False$\;
+          $\isFactor \longleftarrow True$\;
+        }
+      }
+      \Else
+      {
+        \If{$\isFactor$}
+        {
+          $\valid \longleftarrow False$\;
+        }
+      \Else
+      {
+        $\isOperator \longleftarrow False$\;
+        $\isFactor \longleftarrow True$\;
+      }
+    }
+  }
+  \If{$(factor[0] | factor[:-1]) \in \operators$}
+  {
+    $\isOperator \longleftarrow True$\;
+    $\isFactor \longleftarrow False$\;
+  }
+  \If{$not \isEquation$}
+  {
+    $\valid \longleftarrow False$\;
+  }
+}
+  
+  \If{$\valid$}
+  {
+    $\print "Valid"$\;
+  }
+  \Else
+  {
+    $\print "Not Valid"$\;
+  }
+
+  \caption{Algorithme de validation des équations.}
+  \label{valid_equation}
+\end{algorithm}\DecMargin{1em}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../main"
+%%% End: 

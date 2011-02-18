@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classSimuHandler.html#afc82e979f8fd5b95fa016e5940bb066d" title="SimuHandler::launchSimu" alt="" coords="391,59,561,88"/>
+<area shape="rect" href="$classSimuHandler.html#a48195cd103b8ee2b973b59a1d618a7ea" title="SimuHandler::pauseSimu" alt="" coords="169,32,337,61"/>
+<area shape="rect" href="$classSimuHandler.html#a6aacd46d7551b817ee69e295e25ef97b" title="SimuHandler::resumeSimu" alt="" coords="165,85,341,115"/>
+<area shape="rect" href="$classSimuHandler.html#aaa40fdcec5d4d2e267aaf90f22c22e6d" title="SimuHandler::simuDone" alt="" coords="173,139,333,168"/>
+<area shape="rect" href="$classSimuUI.html#a7fe7f5d86adfb15039dede5d151496ba" title="SimuUI::on_launchButton_clicked" alt="" coords="612,59,828,88"/>
+</map>

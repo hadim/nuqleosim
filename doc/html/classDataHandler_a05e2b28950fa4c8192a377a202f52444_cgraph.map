@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html#aee0c1d13b7c0dc9f2b52918e9453602e" title="XmlAccess::removeExperiment" alt="" coords="228,5,431,35"/>
+<area shape="rect" href="$classXmlAccess.html#a77746ee01e7f2fb4b0be4f9d44ba04ac" title="XmlAccess::save" alt="" coords="268,59,391,88"/>
+<area shape="rect" href="$classDataHandler.html#a11dedcd6c39a1c9189f9b0f0a9c869b5" title="DataHandler::signal_expRemove" alt="" coords="224,112,435,141"/>
+</map>

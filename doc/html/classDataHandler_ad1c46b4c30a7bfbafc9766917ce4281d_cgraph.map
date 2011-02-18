@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" href="$classDataHandler.html#ac439d89ae7c5375ab5c23be14fcbd652" title="DataHandler::expChanged" alt="" coords="240,59,411,88"/>
+<area shape="rect" href="$classDataHandler.html#a05e2b28950fa4c8192a377a202f52444" title="DataHandler::expRemove" alt="" coords="241,112,409,141"/>
+<area shape="rect" href="$classXmlAccess.html#a59cfaec842d375fa0e4031c66683033a" title="XmlAccess::getExperiment" alt="" coords="236,191,415,220"/>
+<area shape="rect" href="$classXmlAccess.html#ac99141fd759006e8bca4392a0f07e190" title="XmlAccess::modifExperiment" alt="" coords="473,5,665,35"/>
+<area shape="rect" href="$classXmlAccess.html#a77746ee01e7f2fb4b0be4f9d44ba04ac" title="XmlAccess::save" alt="" coords="508,59,631,88"/>
+<area shape="rect" href="$classXmlAccess.html#a23d02d312f13666f58ebd7a9b84185c4" title="XmlAccess::addExperiment" alt="" coords="735,5,916,35"/>
+<area shape="rect" href="$classXmlAccess.html#aee0c1d13b7c0dc9f2b52918e9453602e" title="XmlAccess::removeExperiment" alt="" coords="724,85,927,115"/>
+<area shape="rect" href="$classExperiment.html#ae2fc82710ab49ff6e098388521db22bb" title="Experiment::getImages" alt="" coords="977,5,1132,35"/>
+<area shape="rect" href="$classDataHandler.html#a11dedcd6c39a1c9189f9b0f0a9c869b5" title="DataHandler::signal_expRemove" alt="" coords="464,163,675,192"/>
+<area shape="rect" href="$classXmlAccess.html#ac3ecada7fbd4afc434be0fad0abe9e7b" title="XmlAccess::getExperiments" alt="" coords="476,216,663,245"/>
+<area shape="rect" href="$classExperiment.html#a7499b6f67c3739f080d024eba93c149e" title="Experiment::setImages" alt="" coords="748,216,903,245"/>
+</map>

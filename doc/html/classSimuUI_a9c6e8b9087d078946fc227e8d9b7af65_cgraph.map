@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$classSimuUI.html#a292d5768559d3ddc31db80f3a44f7a74" title="SimuUI::on_dfcAccessBox_stateChanged" alt="" coords="172,5,436,35"/>
+<area shape="rect" href="$classSimuUI.html#a8595653c4eac19c8aaf42d702962f966" title="SimuUI::on_fcAccessBox_stateChanged" alt="" coords="175,59,433,88"/>
+<area shape="rect" href="$classSimuUI.html#a699cbc2e4863d35bab8fb75a996b92e7" title="SimuUI::on_gcAccessBox_stateChanged" alt="" coords="173,112,435,141"/>
+<area shape="rect" href="$classSimuUI.html#a8edc8ca7172095683e9c9356dcd32ea1" title="SimuUI::molInList" alt="" coords="485,59,611,88"/>
+</map>

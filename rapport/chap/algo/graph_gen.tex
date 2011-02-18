@@ -1,0 +1,47 @@
+\IncMargin{1em}
+\begin{algorithm}
+  \SetKwData{ListR}{listOfReactions}
+
+  \SetKwFunction{Graph}{Graph}
+  \SetKwFunction{AddNode}{add\_node}
+  \SetKwFunction{AddLink}{add\_link}
+  \SetKwFunction{Reactants}{get\_reactants}
+  \SetKwFunction{Products}{get\_products}
+  \SetKwFunction{Banned}{get\_banned\_compounds}
+  
+  $graph \longleftarrow \Graph()$\;
+  \For{$reac \in \ListR$}
+  {
+    \BlankLine
+    $nodeReac \leftarrow graph.\AddNode(reac)$\;
+
+    \BlankLine
+    \For{$reactant \in reac.\Reactants()$}
+    {
+      $node \leftarrow graph.\AddNode(reactant)$\;
+      $graph.\AddLink(node, nodeReac)$\;
+    }
+
+    \BlankLine
+    \For{$product \in reac.\Products()$}
+    {
+      $node \leftarrow graph.\AddNode(product)$\;
+      $graph.\AddLink(nodeReac, node)$\;
+    }
+
+    \BlankLine
+    \For{$banned \in reac.\Banned()$}
+    {
+      $node \leftarrow graph.\AddNode(banned)$\;
+      $graph.\AddLink(nodeReac, node)$\;
+    }
+  }
+
+  \caption{Génération du graphe représentant le réseau métabolique.}
+  \label{graph_gen}
+\end{algorithm}\DecMargin{1em}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../main"
+%%% End: 

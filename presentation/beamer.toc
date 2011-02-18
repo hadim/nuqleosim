@@ -1,0 +1,19 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {french}
+\beamer@sectionintoc {2}{Analyse}{4}{0}{1}
+\beamer@subsectionintoc {2}{1}{Contexte biologique : le nucl\IeC {\'e}ole}{5}{0}{1}
+\beamer@subsectionintoc {2}{2}{Besoins fonctionnels et non fonctionnels}{7}{0}{1}
+\beamer@sectionintoc {3}{Conception}{9}{0}{2}
+\beamer@subsectionintoc {3}{1}{Base de donn\IeC {\'e}es nucl\IeC {\'e}olaires}{10}{0}{2}
+\beamer@subsectionintoc {3}{2}{Mod\IeC {\'e}lisation du nucl\IeC {\'e}ole}{11}{0}{2}
+\beamer@subsectionintoc {3}{3}{Prototypage de l'interface}{13}{0}{2}
+\beamer@sectionintoc {4}{R\IeC {\'e}alisation}{14}{0}{3}
+\beamer@subsectionintoc {4}{1}{Technologies utilis\IeC {\'e}es}{15}{0}{3}
+\beamer@subsectionintoc {4}{2}{Architecture de l'application}{17}{0}{3}
+\beamer@subsectionintoc {4}{3}{Structuration de la base de donn\IeC {\'e}es}{18}{0}{3}
+\beamer@subsectionintoc {4}{4}{Impl\IeC {\'e}mentation de la mod\IeC {\'e}lisation}{19}{0}{3}
+\beamer@sectionintoc {5}{R\IeC {\'e}sultats}{20}{0}{4}
+\beamer@subsectionintoc {5}{1}{Interface avec la base de donn\IeC {\'e}es}{21}{0}{4}
+\beamer@subsectionintoc {5}{2}{Param\IeC {\'e}trage d'une simulation}{22}{0}{4}
+\beamer@subsectionintoc {5}{3}{Visualisation de la mod\IeC {\'e}lisation}{23}{0}{4}
+\beamer@subsectionintoc {5}{4}{Exemple de g\IeC {\'e}n\IeC {\'e}ration de r\IeC {\'e}sultats}{24}{0}{4}

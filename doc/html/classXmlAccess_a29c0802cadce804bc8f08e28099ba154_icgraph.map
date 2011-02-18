@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html#aab33a0da2e83a13180881dbac41d9d38" title="XmlAccess::modifMolecule" alt="" coords="247,7,425,36"/>
+<area shape="rect" href="$classDataHandler.html#aeefd277af2e605eda9650d50533cb7b1" title="DataHandler::molRemove" alt="" coords="477,59,645,88"/>
+<area shape="rect" href="$classDataHandler.html#acfa379434bc9322778532ba47f77b504" title="DataHandler::molChanged" alt="" coords="476,5,647,35"/>
+<area shape="rect" href="$classDataHandler.html#a5cc275631763290bcd424760ce7e4f05" title="DataHandler::getMolWidget" alt="" coords="697,32,876,61"/>
+<area shape="rect" href="$classDataUI.html#a31478203a5350ef31c16e08c2fe49ffa" title="DataUI::on_listMolWidget_clicked" alt="" coords="925,32,1141,61"/>
+</map>

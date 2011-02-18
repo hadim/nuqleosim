@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" href="$classCompute.html" title="{Compute\n|# environment\l# length\l# height\l# width\l# nbColonies\l# colonies\l# nbColoniesRna\l# coloniesRna\l# results\l|+ init()\l+ step()\l+ get_results()\l+ getEnv()\l# run()\l}" alt="" coords="301,645,421,957"/>
+<area shape="rect" href="$structUnitFrame.html" title="{UnitFrame\n|+ compartment\l+ flag\l+ color\l+ pos\l|}" alt="" coords="197,272,307,416"/>
+<area shape="rect" href="$structPosition.html" title="{Position\n|+ x\l+ y\l+ z\l|}" alt="" coords="127,5,193,131"/>
+<area shape="rect" href="$structMolecule__agent.html" title="{Molecule_agent\n|+ colony\l+ position\l|}" alt="" coords="140,515,252,621"/>
+<area shape="rect" href="$structTranscriptor__agent.html" title="{Transcriptor_agent\n|+ position\l|}" alt="" coords="5,524,133,612"/>
+<area shape="rect" href="$structColor.html" title="{Color\n|+ r\l+ g\l+ b\l|}" alt="" coords="317,5,368,131"/>
+<area shape="rect" href="$structRna__struct.html" title="{Rna_struct\n|+ type\l+ FC_access\l+ DFC_access\l+ GC_access\l+ ext_access\l+ flag\l+ color\l|}" alt="" coords="331,244,437,444"/>
+<area shape="rect" href="$structResu__struct.html" title="{Resu_struct\n|+ nbPlots\l+ stepSize\l+ gc_rna1\l+ gc_rna2\l+ gc_rna3\l+ dfc_rna1\l+ dfc_rna2\l+ dfc_rna3\l+ fc_rna1\l+ fc_rna2\l+ fc_rna3\l+ out_rna\l|}" alt="" coords="461,197,552,491"/>
+</map>

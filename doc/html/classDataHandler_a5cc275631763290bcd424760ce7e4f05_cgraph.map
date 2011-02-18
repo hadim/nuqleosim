@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" href="$classXmlAccess.html#a1dced5c27a12596a390149f25539be11" title="XmlAccess::getMolecule" alt="" coords="239,12,404,41"/>
+<area shape="rect" href="$classDataHandler.html#acfa379434bc9322778532ba47f77b504" title="DataHandler::molChanged" alt="" coords="236,79,407,108"/>
+<area shape="rect" href="$classDataHandler.html#aeefd277af2e605eda9650d50533cb7b1" title="DataHandler::molRemove" alt="" coords="237,157,405,187"/>
+<area shape="rect" href="$classXmlAccess.html#abecc950c13179ce5b3a855a9f08a1e6f" title="XmlAccess::getMolecules" alt="" coords="476,5,647,35"/>
+<area shape="rect" href="$classXmlAccess.html#aab33a0da2e83a13180881dbac41d9d38" title="XmlAccess::modifMolecule" alt="" coords="472,59,651,88"/>
+<area shape="rect" href="$classXmlAccess.html#a77746ee01e7f2fb4b0be4f9d44ba04ac" title="XmlAccess::save" alt="" coords="500,112,623,141"/>
+<area shape="rect" href="$classXmlAccess.html#a0ef0a98567319205f1910a89363c74dd" title="XmlAccess::addMolecule" alt="" coords="727,59,895,88"/>
+<area shape="rect" href="$classXmlAccess.html#a29c0802cadce804bc8f08e28099ba154" title="XmlAccess::removeMolecule" alt="" coords="716,137,905,167"/>
+<area shape="rect" href="$classDataHandler.html#a13ebd198a3d9148b0324bf18b6f1ef96" title="DataHandler::signal_molRemove" alt="" coords="456,216,667,245"/>
+</map>
