@@ -1,0 +1,41 @@
+# Lib files
+*.o
+*.so
+
+#Codeblocks files
+*.layout
+*.cbp
+
+# CMake files
+cmake_install.cmake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+
+# Latex
+*.aux
+*.toc
+*.el
+*.bbl
+*.blg
+*.log
+*.out
+*.ps
+*.dvi
+*.toc
+*.out
+*.nav
+main.pdf
+__region__.tex
+
+# Temporary
+*~
+#*#
+\#*\#
+
+# Qt unneeded
+moc_*.cxx
+ui_*.h
+
+# Build dir
+build/
